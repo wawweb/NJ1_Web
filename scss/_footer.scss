@@ -1,0 +1,386 @@
+footer {
+    width: 100%;
+    height: auto;
+
+    //上部
+    .top {
+        width: 100%;
+        height: auto;
+        background: $footer_BG1;
+
+        .title {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 20px 0 0 15px;
+            box-sizing: border-box;
+
+            p {
+                color: $footer_Partner_Title;
+                font-size: 14px;
+                font-weight: bold;
+
+                &:nth-of-type(2) {
+                    margin: 0 10px;
+                }
+                &:nth-of-type(3) {
+                    color: $footer_Title;
+                }
+            }
+        }
+
+        .box {
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            div {
+                flex-shrink: 0;
+                margin: 0 15px;
+            }
+        }
+
+        .payments {
+            width: 1350px;
+            height: auto;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 0 10px;
+
+            .box {
+                
+                div {
+                    height: 35px;
+
+                    &.bank {
+                        width: 114px;
+                    }
+                    &.imove {
+                        width: 110px;
+                    }
+                    &.iwallet {
+                        width: 112px;
+                    }
+                    &.sticpay {
+                        width: 111px;
+                    }
+                    &.tigerpay {
+                        width: 135px;
+                    }
+                    &.usdt {
+                        width: 99px;
+                    }
+                    &.vega {
+                        width: 163px;
+                    }
+                }
+            }
+        }
+
+        .partner {
+            width: 1350px;
+            height: auto;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 0 10px;
+
+            .box {
+                
+                div {
+                    height: 46px;
+
+                    &.ab {
+                        width: 100px;
+                    }
+                    &.ag {
+                        width: 109px;
+                    }
+                    &.atux,
+                    &.ftp {
+                        width: 140px;
+                    }
+                    &.bng {
+                        width: 102px;
+                    }
+                    &.bp {
+                        width: 142px;
+                    }
+                    &.dg {
+                        width: 75px;
+                    }
+                    &.elk {
+                        width: 96px;
+                    }
+                    &.ely,
+                    &.evo {
+                        width: 137px;
+                    }
+                    &.evoplay,
+                    &.sp {
+                        width: 124px;
+                    }
+                    &.gh {
+                        width: 58px;
+                    }
+                    &.ifun,
+                    &.pg {
+                        width: 126px;
+                    }
+                    &.jili {
+                        width: 73px;
+                    }
+                    &.mg {
+                        width: 135px;
+                    }
+                    &.net {
+                        width: 92px;
+                    }
+                    &.nolimit {
+                        width: 121px;
+                    }
+                    &.og {
+                        width: 52px;
+                    }
+                    &.pls {
+                        width: 173px;
+                    }
+                    &.png {
+                        width: 115px;
+                    }
+                    &.pp {
+                        width: 95px;
+                    }
+                    &.qs {
+                        width: 111px;
+                    }
+                    &.redrake {
+                        width: 77px;
+                    }
+                    &.redtiger,
+                    &.sa {
+                        width: 103px;
+                    }
+                    &.relax {
+                        width: 101px;
+                    }
+                    &.rsg {
+                        width: 70px;
+                    }
+                    &.sport {
+                        width: 97px;
+                    }
+                    &.tpg {
+                        width: 109px;
+                    }
+                    &.wm {
+                        width: 40px;
+                    }
+                    &.ygg {
+                        width: 133px;
+                    }
+                }
+            }
+        }
+    }
+
+    //下部
+    .footerList {
+        width: 100%;
+        height: auto;
+        background: $footer_BG2;
+        padding: 40px 0;
+
+        .center {
+            width: 1350px;
+            height: auto;
+            margin: 0 auto;
+
+            ul {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    width: 20%;
+                    height: auto;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+
+                    .title {
+                        color: $footer_Title;
+                        font-size: 21px;
+                        font-weight: bold;
+                        margin-bottom: 30px;
+                        text-decoration: underline;
+                    }
+
+                    button {
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 20px;
+                        background: none;
+                        position: relative;
+                        color: $footer_Title;
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-align: left;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        &.serviceBtn {
+                            width: 240px;
+                            height: 54px;
+                            @include footerBtn;
+                            border-radius: 30px;
+                        }
+                        &.iframe-box {
+                            width: 240px;
+                            height: 54px;
+                            @include footerBtn;
+                            display: flex;
+                            background: $footer_iframeBtn;
+                            border-radius: 30px;
+
+                            img {
+                                width: 121px;
+                                height: 48px;
+                                margin: auto;
+                            }
+                            
+                            &:hover,&:active,&.active {
+                                background: $footer_iframeBtn;
+                            }
+                        }
+                        &.twitter {
+                            width: 48px;
+                            height: 48px;
+
+                            &:hover,&:active,&.active {
+
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        &::before {
+                            opacity: 0;
+                            content: "";
+                            position: absolute;
+                            left: -25px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 18px;
+                            height: 18px;
+                            background: $footer_Hover;
+                            clip-path: polygon(50% 0,86% 50%,50% 100%,14% 50%);
+                            transition: 0.3s all;
+                            pointer-events: none;
+                        }
+
+                        &:hover,&:active,&.active {
+                            color: $footer_Hover;
+
+                            &::before {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.agentP {
+    width: 100%;
+    height: auto;
+    background: $gameWrapBG;
+    padding-top: 105px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+    .title {
+        display: inline;
+        color: $mainFont_1;
+        font-size: 36px;
+        font-weight: bolder;
+        text-align: center;
+        margin: 38px 0 ;
+    }
+
+    .subTitle {
+        display: inline;
+        font-size: 16px;
+        font-weight: bolder;
+        color: $mainFont_3;
+        position: relative;
+        
+
+        &::before {
+            content: " ";
+            background: $Border;
+            width: 40%;
+            height: 1px;
+            position: absolute;
+            top: 8px;
+            left: 403px;
+        }
+
+        &::after {
+            content: " ";
+            background: $Border;
+            width: 40%;
+            height: 1px;
+            position: absolute;
+            top: 8px;
+            right: 403px;
+        }
+    }
+
+    button {
+        width: 349px;
+        height: 64px;
+        @include mainBtn;
+        border-radius: 34px;
+        font-size: 25px;
+        font-weight: bolder;
+        margin: 73px auto;
+    }
+
+    .bottom {
+        width: 100%;
+        height: 100px;
+        background: $secondBG;
+        padding-top: 37px;
+        box-sizing: border-box;
+
+        .copyright {
+            color: $mainFont_1;
+            text-align: center;
+        }
+    }
+}
+.agOther {
+    .bottom {
+        width: 100%;
+        height: 100px;
+        background: $secondBG;
+        padding: 40px;
+        box-sizing: border-box;
+
+        .copyright {
+            color: $mainFont_1;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,555 @@
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background: $header_BG_1;
+    z-index: 999;
+
+    //上部
+    .top {
+        width: 100%;
+        height: 80px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 32px;
+
+        //logo
+        .logo {
+            cursor: pointer;
+        }
+
+        //跑馬燈
+        .marqueeArea {
+            width: 32%;
+            height: 100%;
+
+            .center {
+                width: 100%;
+                height: 100%;
+
+                .marqueeWrap {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .title {
+                        color: $marquee_Title;
+                        font-size: 12px;
+                        font-weight: bold;
+                        width: auto;
+                        flex-shrink: 0;
+                        padding-right: 10px;
+                    }
+
+                    .marquee {
+                        width: 100%;
+                        height: auto;
+                        overflow: hidden;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: $marquee_Word;
+                            display: inline-block;
+                            animation: marquee 10s linear infinite;
+                            padding-left: 100%;
+                            white-space: nowrap;
+                        }
+
+                        @keyframes marquee {
+                            0% {
+                                transform: translate(0%);
+                            }
+
+                            100% {
+                                transform: translate(-100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //排行榜
+        // .rankBtn {
+        //     color: $remind;
+        //     padding-left: 25px;
+        //     margin-right: 15px;
+        //     cursor: pointer;
+        //     position: relative;
+
+        //     &::before {
+        //         content: "";
+        //         width: 20px;
+        //         height: 20px;
+        //         background-position-y: 0%;
+        //         position: absolute;
+        //         left: 0%;
+        //         top: 50%;
+        //         transform: translateY(-50%);
+        //     }
+
+        //     &:hover {
+        //         color: $mainFont_3;
+
+        //         &::before {
+        //             background-position-y: 99%;
+        //         }
+        //     }
+        // }
+
+        //退傭代理註冊頁面NAV
+        .agentNav {
+            min-width: 897px;
+            display: flex;
+            margin-left: -300px;
+
+            li {
+                width: auto;
+                height: 40px;
+                color: $mainFont_1;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 40px;
+                text-align: center;
+                position: relative;
+                cursor: pointer;
+                padding: 0 20px;
+                margin: 0 10px;
+
+                &:hover,&:active,&.active {
+                    color: $choose_Border;
+
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        height: 4px;
+                        background: $choose_Border;
+                        position: absolute;
+                        bottom: -6px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 1855px) {
+            .agentNav {
+                margin: 0;
+            }
+        }
+
+        @media only screen and (max-width: 1590px) {
+            
+            .agentNav {
+                margin: 0;
+
+                li {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        //右
+        .user {
+            width: auto;
+            height: 100%;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            display: none;
+            flex-shrink: 0;
+
+            &.display {
+                display: flex;
+            }
+
+            li:not(.platform) {
+                display: flex;
+                width: auto;
+                height: 100%;
+                align-items: center;
+                position: relative;
+
+                //未登入選單
+                .loginForm {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    div {
+                        margin-right: 10px;
+
+                        input {
+                            width: 180px;
+                            height: 40px;
+                            @include headerInput;
+                        }
+                    }
+
+                    button {
+                        width: auto;
+                        min-width: 68px;
+                        height: 40px;
+                        @include headerBtn_1;
+                        margin-right: 10px;
+
+                        &.signupBtn {
+                            @include headerBtn_2;
+                        }
+                    }
+                    //退傭代理註冊按鈕
+                    .agentSignup {
+                        width: 136px;
+                        height: 40px;
+                        border-radius: 20px;
+                        margin-right: 20px;
+                    }
+                }
+
+                //忘記密碼
+                &.forget {
+                    color: $header_Forget;
+                    font-size: 15px;
+                    font-weight: bold;
+                    margin-right: 10px;
+                    cursor: pointer;
+
+                    i {
+                        display: block;
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 5px;
+                    }
+                }
+
+                //語言列
+                &.lang {
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        pointer-events: none;
+                    }
+
+                    &::before {
+                        width: 1px;
+                        height: 30px;
+                        background: $header_langBorder;
+                        right: 40px;
+                    }
+                    &::after {
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 8px 6px 0 6px;
+                        border-color: $header_langBtn transparent;
+                        right: 15px;
+                    }
+                    
+                    select {
+                        width: auto;
+                        height: 40px;
+                        @include headerLang;
+                    }
+                }
+            }
+
+            //已登入
+            &.alLogin {
+
+                li:not(.platform) {
+                    margin-right: 15px;
+
+                    button {
+                        width: auto;
+                        height: auto;
+                        background: none;
+                        color: $header_Color1;
+                        font-size: 16px;
+                        font-weight: bold;
+                        transition: all 0.3s;
+
+                        &:hover,&:active,&.active {
+                            color: $header_Hover;
+                        }
+
+                        .remind {
+                            min-width: 18px;
+                            min-height: 18px;
+                            @include headerMailRemind;
+                        }
+                    }
+
+                    //等級
+                    &.lv {
+                        color: $header_Color1;
+                        font-weight: bold;
+                        font-size: 16px;
+
+                        span {
+                            color: $header_Color2;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    //各平台金額
+                    &.moneyTotal {
+
+                        .total {
+                            width: auto;
+                            height: auto;
+                            @include headerMoney;
+                        }
+
+                        .transferInfo {
+                            width: 290px;
+                            height: auto;
+                            max-height: 516px;
+                            @include headerMoneyList;
+
+                            &.display {
+                                display: block;
+                            }
+
+                            li {
+                                width: 100%;
+                                height: 47px;
+                                padding: 11px 16px;
+                                box-sizing: border-box;
+
+                                div {
+                                    width: 100%;
+                                    height: 100%;
+                                    font-weight: bold;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    position: relative;
+
+                                    .money {
+
+                                        p {
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                        }
+                                        
+                                        i {
+                                            display: none;
+                                            position: absolute;
+                                            width: 20px;
+                                            height: 20px;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                            right: -6px;
+                                            animation: circle 1s linear infinite;
+
+                                            &.display {
+                                                display: block;
+                                            }
+                                        }
+
+                                        @keyframes circle {
+                                            0% {
+                                                transform: translateY(-50%) rotate(0deg);
+                                            }
+
+                                            100% {
+                                                transform: translateY(-50%) rotate(360deg);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.lang {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //選單
+    .gameNav {
+        width: 100%;
+        height: 50px;
+        background: $header_BG_2;
+
+        .center {
+            width: 1400px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    width: auto;
+                    height: 100%;
+                    padding: 0 15px;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    color: $headerNav_Word;
+                    font-weight: bold;
+                    transition: 0.3s all;
+
+                    &:hover,&:active,&.active {
+                        color: $headerNav_Hover;
+                    }
+                }
+            }
+        }
+    }
+
+    //下拉式選單
+    .topGameList {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        left: 0px;
+        bottom: -226px;
+        z-index: 10;
+
+        &.display {
+            height: auto;
+        }
+
+        .listWrap {
+            width: 100%;
+            height: 226px;
+            background: $topGameList_BG;
+
+            .center {
+                width: 1400px;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                i {
+                    display: none;
+                    width: 30px;
+                    height: 30px;
+                    background: $topGameList_ArrowBG;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    position: absolute;
+                    align-items: center;
+                    justify-content: center;
+                    padding-right: 2px;
+                    box-sizing: border-box;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 7px;
+                        height: 12px;
+                    }
+
+                    &.prev {
+                        left: -5px;
+                    }
+                    &.next {
+                        transform: scaleX(-1);
+                        right: -5px;
+                    }
+
+                    &.display {
+                        display: flex;
+                    }
+                }
+
+                .container {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+
+                    &.scroll {
+                        width: 1365px;
+                    }
+
+                    ul {
+                        display: none;
+                        width: auto;
+                        height: 100%;
+                        transition: 0.6s ease;
+
+                        &.display {
+                            display: flex;
+                        }
+
+                        li {
+                            cursor: pointer;
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            position: relative;
+
+                            p {
+                                font-size: 16px;
+                                padding-top: 8px;
+                                text-align: center;
+                                font-weight: bold;
+                                color: $topGameList_Title;
+                            }
+
+                            .fixBox {
+                                display: none;
+                                position: absolute;
+                                width: 92%;
+                                height: 92%;
+                                border-radius: 5px;
+                                background: $filter;
+                                align-items: center;
+                                justify-content: center;
+                                flex-direction: column;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                cursor: not-allowed;
+
+                                &.display {
+                                    display: flex;
+                                }
+        
+                                p {
+                                    color: $topGameList_fixWord;
+                                    font-size: 14px;
+                                    font-weight: bold;
+
+                                    &.title {
+                                        margin-bottom: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

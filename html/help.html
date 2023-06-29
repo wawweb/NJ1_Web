@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!--上部-->
+        <div class="top">
+            <!--logo-->
+            <img class="logo" src="../images/icon/logo.png" onclick="window.location.href='../index.html'">
+            <!--跑馬燈-->
+            <div class="marqueeArea">
+                <div class="center">
+                    <div class="marqueeWrap">
+                        <p class="title">最新ニュース</p>
+                        <div class="marquee">
+                            <p>人気ゲーム-日本麻雀</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右_已登入-->
+            <ul class="user alLogin display">
+                <!--等級-->
+                <li class="lv">
+                    ゴールド会員
+                    <span>userName</span>
+                </li>
+                <!--各平台金額-->
+                <li class="moneyTotal">
+                    <span class="total">¥0.00</span>
+                    <ul class="transferInfo">
+                        <li class="platform">
+                            <div>
+                                <p>36588 SPORTS</p>
+                                <p class="money">
+                                    <i class="display"></i>
+                                    <span></span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>HABANERO</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>AG CASINO</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>RSG GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>PP SLOTS</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>GoldenHero</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>PNG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>JILI SLOTS</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>YGG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>Microgaming</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>BOONGO GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>MG CASINO</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>IFUN GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>EVO PLAY</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>PP CASINO</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>RELAX</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>NO LIMIT CITY</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>AUX</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>EVO CASINO</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>ALL BET CASINO</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>SA CASINO</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>TPG GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>OG PLUS CASINO</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>WM CASINO</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>SIMPLEPLAY GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>DG CASINO</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>PLAYSON GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>BLUEPRINT GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>RED RAKE GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>4ThePlayer GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>ELK GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>ELYSIUM GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>QUICKSPIN GAMES</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <button onclick="window.location.href='./deposit.html'">入金</button>
+                </li>
+                <li>
+                    <button onclick="window.location.href='./transfer.html'">振替</button>
+                </li>
+                <li>
+                    <button onclick="window.location.href='./withdrawal.html'">出金</button>
+                </li>
+                <li>
+                    <button onclick="window.location.href='./member.html'">マイページ</button>
+                </li>
+                <li>
+                    <button onclick="window.location.href='./mail.html'">
+                        インボックス
+                        <p class="remind display">2</p>
+                    </button>
+                </li>
+                <li>
+                    <button onclick="window.location.href='../index.html'">ログアウト</button>
+                </li>
+                <li class="lang">
+                    <select>
+                        <option>繁體中文</option>
+                        <option>简体中文</option>
+                        <option>ENGLISH</option>
+                        <option selected>日本語</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <!--選單-->
+        <div class="gameNav">
+            <div class="center">
+                <ul>
+                    <li class="hotBtn">人気ゲーム</li>
+                    <li class="sportBtn" onclick="window.location.href='./sportPage.html'">スポーツ</li>
+                    <li class="liveBtn" onclick="window.location.href='./livePage.html'">ライブ</li>
+                    <li class="slotBtn" onclick="window.location.href='./slotPage.html'">スロット</li>
+                    <li class="fishBtn" onclick="window.location.href='./fishPage.html'">釣りゲーム</li>
+                    <li class="boardBtn" onclick="window.location.href='./boardPage.html'">テーブルゲーム</li>
+                    <li class="event" onclick="window.location.href='./event.html'">プロモーション</li>
+                    <li class="vip" onclick="window.location.href='./vip.html'">VIPクラブ</li>
+                </ul>
+            </div>
+        </div>
+        <!--下拉式選單-->
+        <div class="topGameList">
+            <div class="listWrap">
+                <div class="center">
+                    <i class="prev"></i>
+                    <div class="container">
+                    <ul class="hot">
+                        <li>
+                            <div>
+                                <img src="../images/partner/hot/hotGame_1.png">
+                            </div>
+                            <p>Japanese Mahjong</p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="../images/partner/hot/hotGame_2.png">
+                            </div>
+                            <p>Koi-Koi</p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="../images/partner/hot/hotGame_3.png">
+                            </div>
+                            <p>Big Win Cat</p>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="../images/partner/hot/hotGame_4.png">
+                            </div>
+                            <p>Oiran Dream</p>
+                        </li>
+                    </ul>
+                    <ul class="sport">
+                        <li onclick="openSportGame()">
+                            <div>
+                                <img src="../images/partner/sport/36588.png">
+                            </div>
+                            <p>36588 SPORTS</p>
+                        </li>
+                    </ul>
+                    <ul class="live">
+                        <li onclick="openLiveGame()">
+                            <div>
+                                <img src="../images/partner/live/live_1.png">
+                            </div>
+                            <p>AG CASINO</p>
+                        </li>
+                        <li onclick="openLiveGame()">
+                            <div>
+                                <img src="../images/partner/live/live_2.png">
+                            </div>
+                            <p>MG CASINO</p>
+                        </li>
+                        <li onclick="openLiveGame()">
+                            <div>
+                                <img src="../images/partner/live/live_3.png">
+                            </div>
+                            <p>PP CASINO</p>
+                        </li>
+                        <li onclick="openLiveGame()">
+                            <div>
+                                <img src="../images/partner/live/live_4.png">
+                            </div>
+                            <p>EVO CASINO</p>
+                        </li>
+                        <li onclick="openLiveGame()">
+                            <div>
+                                <img src="../images/partner/live/live_5.png">
+                            </div>
+                            <p>ALLBET CASINO</p>
+                        </li>
+                        <li onclick="openLiveGame()">
+                            <div>
+                                <img src="../images/partner/live/live_6.png">
+                            </div>
+                            <p>SA CASINO</p>
+                        </li>
+                        <li onclick="openLiveGame()">
+                            <div>
+                                <img src="../images/partner/live/live_7.png">
+                            </div>
+                            <p>OG CASINO</p>
+                        </li>
+                        <li onclick="openLiveGame()">
+                            <div>
+                                <img src="../images/partner/live/live_8.png">
+                            </div>
+                            <p>WM CASINO</p>
+                        </li>
+                        <li onclick="openLiveGame()">
+                            <div>
+                                <img src="../images/partner/live/live_9.png">
+                            </div>
+                            <p>DG CASINO</p>
+                        </li>
+                        <li onclick="openLiveGame()">
+                            <div>
+                                <img src="../images/partner/live/live_10.png">
+                            </div>
+                            <p>RG CASINO</p>
+                        </li>
+                    </ul>
+                    <ul class="slot">
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_1.png">
+                            </div>
+                            <p>HABANERO</p>
+                            <div class="fixBox display">
+                                <p class="title">修理中</p>
+                                <p>2022/03/02 PM 2:00 ~</p>
+                                <p>2020/03/02 PM 4:00</p>
+                            </div>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_2.png">
+                            </div>
+                            <p>RSG</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_3.png">
+                            </div>
+                            <p>PP SLOTS</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_4.png">
+                            </div>
+                            <p>GoldHero</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_5.png">
+                            </div>
+                            <p>PNG</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_6.png">
+                            </div>
+                            <p>JILI SLOTS</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_7.png">
+                            </div>
+                            <p>YGG</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_8.png">
+                            </div>
+                            <p>Microgaming</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_9.png">
+                            </div>
+                            <p>BOOONGO GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_10.png">
+                            </div>
+                            <p>IFUN GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_11.png">
+                            </div>
+                            <p>EVO PLAY</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_12.png">
+                            </div>
+                            <p>RELAX</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_13.png">
+                            </div>
+                            <p>NO LIMIT CITY</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_14.png">
+                            </div>
+                            <p>AUX</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_15.png">
+                            </div>
+                            <p>TPG GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_16.png">
+                            </div>
+                            <p>SIMPLEPLAY GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_17.png">
+                            </div>
+                            <p>PLAYSON GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_18.png">
+                            </div>
+                            <p>BLUEPRINT GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_19.png">
+                            </div>
+                            <p>RED RAKE GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_20.png">
+                            </div>
+                            <p>4ThePlayer GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_21.png">
+                            </div>
+                            <p>ELK GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_22.png">
+                            </div>
+                            <p>ELYSIUM GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./slotPage.html'">
+                            <div>
+                                <img src="../images/partner/slot/slot_23.png">
+                            </div>
+                            <p>QUICKSPIN GAMES</p>
+                        </li>
+                    </ul>
+                    <ul class="fish">
+                        <li onclick="window.location.href='./fishPage.html'">
+                            <div>
+                                <img src="../images/partner/fish/fish_1.png">
+                            </div>
+                            <p>RSG GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./fishPage.html'">
+                            <div>
+                                <img src="../images/partner/fish/fish_2.png">
+                            </div>
+                            <p>JILI SLOTS</p>
+                        </li>
+                        <li onclick="window.location.href='./fishPage.html'">
+                            <div>
+                                <img src="../images/partner/fish/fish_3.png">
+                            </div>
+                            <p>TPG GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./fishPage.html'">
+                            <div>
+                                <img src="../images/partner/fish/fish_4.png">
+                            </div>
+                            <p>SIMPLEPLAY GAMES</p>
+                        </li>
+                    </ul>
+                    <ul class="board">
+                        <li onclick="window.location.href='./boardPage.html'">
+                            <div>
+                                <img src="../images/partner/board/board_1.png">
+                            </div>
+                            <p>HABANERO</p>
+                        </li>
+                        <li onclick="window.location.href='./boardPage.html'">
+                            <div>
+                                <img src="../images/partner/board/board_2.png">
+                            </div>
+                            <p>JILI SLOTS</p>
+                        </li>
+                        <li onclick="window.location.href='./boardPage.html'">
+                            <div>
+                                <img src="../images/partner/board/board_3.png">
+                            </div>
+                            <p>Microgaming</p>
+                        </li>
+                        <li onclick="window.location.href='./boardPage.html'">
+                            <div>
+                                <img src="../images/partner/board/board_4.png">
+                            </div>
+                            <p>IFUN GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./boardPage.html'">
+                            <div>
+                                <img src="../images/partner/board/board_5.png">
+                            </div>
+                            <p>RED RAKE GAMES</p>
+                        </li>
+                        <li onclick="window.location.href='./boardPage.html'">
+                            <div>
+                                <img src="../images/partner/board/board_6.png">
+                            </div>
+                            <p>4ThePlayer GAMES</p>
+                        </li>
+                    </ul>
+                    </div>
+                    <i class="next"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="helpPage">
+            <div class="center">
+                <div>
+                    <ul class="nav">
+                        <li class="title active">
+                            <p>
+                                <i class="bulb"></i>
+                                初心者ガイド 
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <li class="box display">
+                            <ul>
+                                <li class="forNew active">KYC（本人確認及び身分証明書の...</li>
+                                <li class="forNew">獎金</li>
+                            </ul>
+                        </li>
+                        <li class="title">
+                            <p>
+                                <i class="problem"></i>
+                                よくある質問
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <li class="box">
+                            <ul>
+                                <li class="forQues">プロモーション</li>
+                                <li class="forQues">入出金と振替</li>
+                                <li class="forQues">入出金方法</li>
+                                <li class="forQues">登録とアカウント</li>
+                                <li class="forQues">アフィリエイト</li>
+                                <li class="forQues">お問い合わせ</li>
+                            </ul>
+                        </li>
+                        <li class="title">
+                            <p>
+                                <i class="aboutUs"></i>
+                                当社について 
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <li class="box">
+                            <ul>
+                                <li class="forUs">当社について</li>
+                                <li class="forUs">プライバシーポリシー</li>
+                                <li class="forUs">利用規約</li>
+                                <li class="forUs">責任あるゲーミング</li>
+                                <li class="forUs">プロモーション</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="helpWrap">
+                    <div class="new display">
+                        <h2>本人確認書類のアップロード</h2>
+                        <h2>本人確認書類</h2>
+                        <p class="remind">● 必要な書類 ● 本人確認書類と運転免許証はいずれかをご提出くださいませ。</p>
+                        <p>運転免許証、パスポート・住民基本台帳カード・外国人登録証(ARC)・マイナンバーカードがご利用いただけます。</p>
+                        <h2>アップロードの際は以下の点にご注意下さい:</h2>
+                        <p>1. 書類が鮮明に写っていること</p>
+                        <p>2. 四隅まで写っていること</p>
+                        <p>3. 提出時点で有効期限内であること</p>
+                        <p>4. 手書きで「FORTUNA認証用」と書いた紙を一緒に確認書類と撮影することIDは運転免許証以外の写真付きの身分証明書のこと</p>
+                        <p class="remind">KYCは順番に審査させていただいておりますので、審査が完了されましたら、インボックスにてメッセージを送らせていただきます。</p>
+                        <p class="remind">また、KYCが認証されてなくても、ゲームをご利用いただけますので、ご安心ください。</p>
+                        <img src="../images/helpImg_1.jpg">
+                        <div class="uploadBox">
+                            <div class="box">
+                                <p class="smallTitle">表面</p>
+                                <div class="innerBox">
+                                    <i class="upload_ic"></i>
+                                    <p>ここにファイルをドロップ</p>
+                                    <p>または</p>
+                                    <button>ファイルを選択</button>
+                                    <p class="remind">2MB以下のpng.jpeg形式のファイルが利用できます</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <p class="smallTitle">裏面</p>
+                                <div class="innerBox">
+                                    <i class="upload_ic"></i>
+                                    <p>ここにファイルをドロップ</p>
+                                    <p>または</p>
+                                    <button>ファイルを選択</button>
+                                    <p class="remind">2MB以下のpng.jpeg形式のファイルが利用できます</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btnBox">
+                            <button class="sendBtn">送信</button>
+                            <button>キャンセル</button>
+                        </div>
+                        <hr>
+                        <h2>住所確認書類</h2>
+                        <p class="remind">● 必要な書類 ● </p>
+                        <p>住所確認書類は、ご本人名義かつ現住所の公的書類・公共料金・携帯料金の支払書類・クレジットカードの利用明細書・政府発行の市・区役所からの郵便物がご利用いただけます</p>
+                        <h2>アップロードの際は以下の点にご注意下さい</h2>
+                        <p>1. 書類が鮮明に写っていること（紙の文書に限ります）</p>
+                        <p>2. 四隅まで写っていること</p>
+                        <p>3. 利用できる書類は発行日より3ヶ月以内のものに限ります</p>
+                        <p>4. 写真がぶれて文字が読み取れない場合は、お撮り直し頂く可能性がございます</p>
+                        <p>5. 手書きで「FORTUNA認証用」と書いた紙を一緒に確認書類と撮影すること</p>
+                        <p class="remind">KYCは順番に審査させていただいておりますので、審査が完了されましたら、インボックスにてメッセージを送らせていただきます。</p>
+                        <p class="remind">また、KYCが認証されてなくても、ゲームをご利用いただけますので、ご安心ください。</p>
+                        <img src="../images/helpImg_3.jpg">
+                        <div class="uploadBox">
+                            <div class="box full">
+                                <div class="innerBox">
+                                    <i class="upload_ic"></i>
+                                    <p>ここにファイルをドロップ</p>
+                                    <p>または</p>
+                                    <button>ファイルを選択</button>
+                                    <p class="remind">2MB以下のpng.jpeg形式のファイルが利用できます</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btnBox noMar">
+                            <button class="sendBtn">送信</button>
+                            <button>キャンセル</button>
+                        </div>
+                    </div>
+                    <div class="new">
+                        <h2>【クーポンでボーナス受取】</h2>
+                        <p>1.ホームページの左側の【ユーザーセンター】をクリックします。</p>
+                        <p>2.【インボックス】をクリックします。メールに記載しているクーポンコードを取得します。</p>
+                        <p>3.【ボーナス受取】をクリックします。</p>
+                        <p>4.【クーポン】をクリックします。</p>
+                        <p>5.【クーポンタイプ】を選びます。クーポンタイプにて 【入金ボーナスクーポン】 か【ボーナスクーポン】を選びます。</p>
+                        <p>6.ボーナスでプレイしたい【ゲーム会社】を選びます。</p>
+                        <p>7.振替金額の入力欄が表示されている場合、振替金額を入力します。</p>
+                        <p>8.クーポンコードを半角で正しく入力します。</p>
+                        <p>9.【送信】をクリックすると、ボーナスの受け取りが完了します。</p>
+                    </div>
+                    <div class="ques">
+                        <h2>賭け条件はどこで確認できますか？</h2>
+                        <p>【ファイナンスサービス】→【振替】からご自身でご確認いただけます。</p>
+                        <p>例：ボーナスをCQ9でプレイする場合</p>
+                        <p>振替元ウォレット：CQ9を選択</p>
+                        <p>振替先ウォレット：メインウォレットを選択</p>
+                        <p>振替金額：CQ9にある残高金額を入力</p>
+                        <p>その後、送信ボタンを押してください。</p>
+                        <p>賭け条件を達成した場合:振替元ウォレットにある残高はメインウォレットへ反映されます。</p>
+                        <p>賭け条件を達成していない場合:現時点の賭け条件詳細が表示されます。</p>
+                        <p>またはライブチャットでいつでもお問い合わせいただけます。</p>
+                        <h2>クーポンコードはどのように使いますか？</h2>
+                        <p>FORTUNAでは随時限定プロモーションを開催いたしております。</p>
+                        <p>【ユーザーセンター】→【ボーナス受取】よりクーポンコードにてご自身でお受け取りいただけます。</p>
+                        <p>開催中のイベント詳細や獲得方法は「プロモーション」よりご確認いただけます。</p>
+                        <p>またはライブチャットでいつでもお問い合わせいただけます。</p>
+                        <h2>プロモーションごとに賭け条件などは異なりますか？</h2>
+                        <p>プロモーション／ボーナスについてそれぞれ条件詳細が異なるため、</p>
+                        <p>ご不明点がございましたら、随時ライブチャットでお問い合わせいただけます。</p>
+                    </div>
+                    <div class="ques">
+                        <h2>どのようにウォレット間の移動を行いますか？</h2>
+                        <p>ログイン後、【ユーザーセンター】→【ファイナンスサービス】→【振替】</p>
+                        <p>振替元ウォレットと振替先ウォレットを選択後、振替金額をご入力ください。</p>
+                        <p>注意：</p>
+                        <p>ゲームウォレット間の振替はできません。先にメインウォレットへ振替後、プレイするゲームウォレットへ振替ください。</p>
+                        <h2>出金時、審査が必要ですか？</h2>
+                        <p>初めてご出金される場合は、ご本人様確認のため、身分証明（KYC）の送付が必要になります。</p>
+                        <p>1.身分証明書（写真付き）</p>
+                        <p>2.現住所確認用書類（公共料金などの請求書）</p>
+                        <h2>本人確認書類として認められているのは、以下の 5 つの書類です。</h2>
+                        <p>1.運転免許証（両面）</p>
+                        <p>2.住民基本台帳カード（両面）</p>
+                        <p>3.パスポート（表面に写真ページ、裏面に住所記入ページ）</p>
+                        <p>4.外国人登録証 (ARC)</p>
+                        <p>5.マイナンバーカード（両面）※裏面のマイナンバーは付箋などで隠し可能</p>
+                        <h2>必要な情報</h2>
+                        <p>1.写真</p>
+                        <p>2.お名前</p>
+                        <p>3.住所</p>
+                        <p>4.発行日</p>
+                        <p>5.有効期限</p>
+                        <p>6.生年月日</p>
+                        <p>7.バーコード（パスポートの場合）</p>
+                        <h2>本人確認書類は、</h2>
+                        <p>1.身分証明書と現住所確認用書類の住所は一致している必要があります</p>
+                        <p>2.四隅が入るようにすること</p>
+                        <p>3.手ブレや光の反射を防いで、文字がハッキリ見えるようにすること</p>
+                        <p>4.有効期限内のもの</p>
+                        <p>上記 4 点に注意しながら、【書類に手書きで<a href="#">「FORTUNA認証用」</a>と書いた紙と一緒に撮影】してlogo8888.jp@logo888.net</p>
+                        <p>までお送りください。</p>
+                        <p>画像加工ソフトなどで編集はしないでください。</p>
+                        <p>当サイトでは 24 時間出金可能となっております。</p>
+                        <p>KYC 完成後、出金審査を行います。</p>
+                        <h2>入金時、審査が必要ですか？</h2>
+                        <p>
+                            クレジットカードで入金する場合のみご本人様名義のカードを所持しているかを確認のため、カード表面と裏面をカメラやモバ
+                            イル端末などで撮って画像化して、
+                        </p>
+                        <p>【書類に手書きで<a href="#">「FORTUNA認証用」</a>と書いた紙と一緒に撮影】してfortuna8888.jp@fortuna888.netまでお送りください。</p>
+                        <p>当サイトでは 24 時間入金可能となっております。審査が完成次第、直ちに入金を反映いたします。</p>
+                        <p>ご注意：</p>
+                        <p>1.当サイトで利用履歴のないクレジットカードのみ提示する必要があります。</p>
+                        <p>2.クレジットカードが「3D セキュア」に対応していない場合は、Mastercard、VISA が利用できません。</p>
+                        <h2>最低入出金額および最高入出金額はいくらですか？</h2>
+                        <p>1 回の入出金可能額は各決済方法によって異なりますので、各入出金方法のご注意をご参照ください。</p>
+                        <h2>入出金の審査時間はどのくらいかかりますか？</h2>
+                        <p>プレイヤー様と当サイトとお互いの権利を保護するために、一定のお時間を頂戴しております。</p>
+                        <p>審査部門はできる限り早めに審査を終了して処理を完了いたします。</p>
+                        <p>審査状況の確認をされたい場合は、カスタマーサポートまでお問い合わせください。</p>
+                    </div>
+                    <div class="ques">
+                        <img src="../images/helpImg_2.jpg">
+                        <h2>決済方法詳しくはこちら:</h2>
+                        <p>1.<a href="#">TIGER PAY</a></p>
+                        <p>2.<a href="#">VenusPoint</a></p>
+                        <p>3.<a href="#">iwallet</a></p>
+                        <p>4.<a href="#">STICPAY</a></p>
+                        <p>5.<a href="#">imove</a></p>
+                        <h2>入金が反映されるまでの時間</h2>
+                        <p>入金方法によって、FORTUNAのアカウントに入金が反映されるまでの時間が異なります。</p>
+                        <h2>銀行振込</h2>
+                        <h3>ご入金</h3>
+                        <p>1.入金反映時間目安:約10分〜1時間(混雑時にはお時間を要する可能性も御座います。)</p>
+                        <p>2.ご入金対応時間:24時間対応</p>
+                        <p>
+                            ※お客様のお使いになられている銀行によっては営業時間外での送金手続きは、銀行側での翌営業時間での送金対応になる場
+                            合がございます。
+                        </p>
+                        <h3>ご出金</h3>
+                        <p>1.出金処理時間目安:約5分〜~1時間(混雑時にはお時間を要する可能性も御座います。)</p>
+                        <p>2.出金申請をしていただいた後、基本的には24時間以内に処理を完了するように心掛けております。</p>
+                        <p>
+                            出金の際にはアカウントの利用状況に応じてアカウント認証をお願いすることがございます。その場合、出金手配はアカウント
+                            認証が全て完了してから開始されますことを予めご了承くださいませ。
+                        </p>
+                        <p>
+                            なお、週末や祝日の出金手続きは通常より時間を要しますことご了承ください。 上記の時間を経過しても反映されない場合
+                            は、ライブチャットまでお問合せください。
+                        </p>
+                    </div>
+                    <div class="ques">
+                        <h2>携帯電話に認証コードが届きません。</h2>
+                        <p>ご登録になった携帯番号が正確かどうかを今一度ご確認ください。</p>
+                        <p>
+                            なお、受信拒否を設定されることによって、SMSが届かない事例が多発しておりますので、この点も併せてご確認いただけれ
+                            ば幸いです。
+                        </p>
+                        <p>ご確認後も届いていない場合は、ライブチャットまでお問い合わせください。</p>
+                        <h2>解約（退会）、アカウント凍結はどのような手続きが必要ですか？</h2>
+                        <p>
+                            当方のアカウントはお一人様1アカウント、1世帯に付き1アカウントとさせていただいている関係で、アカウントの削除はでき
+                            ません。
+                        </p>
+                        <p>ライブチャットまでご連絡いただきますと使用禁止アカウントとしてお手続きをさせていただきます。</p>
+                        <p>当サイトのシステム上、アカウント凍結の手続きとなっておりますのでご理解いただければ幸いです。</p>
+                        <p>ご連絡いただかない限り、アカウントが再開されることはございませんのでご安心ください。</p>
+                        <p>退会のご申請は下記ご登録情報と退会したい理由をご提示の上、</p>
+                        <p>ライブチャットまたはメール logo8888.jp@logo888.net でお知らせください。</p>
+                        <p class="remind">理由、ユーザーID、お名前（漢字）、携帯番号、メールアドレス</p>
+                        <p>関連部門で確認でき次第、直ちにアカウントの凍結をさせていただきます。</p>
+                        <p>アカウントを再開したい場合、ライブチャットまたはメールでご連絡ください。</p>
+                        <p>迅速に対応をさせていただきます。</p>
+                        <h2>パスワードを紛失してしまいました。</h2>
+                        <p>
+                            パスワードをお忘れの場合は、「ログイン」→「パスワードをお忘れですか？」より、ご自身にて仮パスワードを請求できま
+                            す。
+                        </p>
+                        <p>携帯またはメールへ仮パスワードが届きます。仮パスワードでログイン後、</p>
+                        <p>【ユーザーセンター】→【アカウント設定】→【パスワード変更】にてお好きなパスワードへ再設定をお願いいたします。</p>
+                        <p>カスタマーサポートでも仮パスワードを発行することが可能ですので、</p>
+                        <p>下記登録情報を正しくご提示の上、ライブチャットまたはメールにてお問い合わせください。</p>
+                        <p class="remind">ユーザーID、お名前（漢字）、携帯番号、メールアドレス</p>
+                        <h2>アカウントを複数作成することは可能ですか？</h2>
+                        <p>当サイトのご利用はお一人様、一世帯、一住所、一家族、同一IPアドレスに対して一アカウントとさせていただいております。</p>
+                        <p>
+                            いかなる場合においても、各顧客、各世帯、各アドレス、各共有コンピュータ、および共有IPアドレスごとに、1つのアカウン
+                            トのみLOGOをご利用いただけます。
+                        </p>
+                        <p>「重複アカウント」を発見した場合は、予告なしに閉鎖することがあります。</p>
+                    </div>
+                    <div class="ques">
+                        <h2>アフィリエイトをやりたいです。</h2>
+                        <p>下記までご連絡いただきますようお願いいたします。</p>
+                        <p>LOGO8888.jp@LOGO888.net</p>
+                        <p>当サイトのパートナー様になり、お持ちのブログやサイトで紹介することによって</p>
+                        <p>高い報酬を稼ぐチャンスを得られます。本業やプライベートに一切影響することはございません。</p>
+                        <p>もちろんライブチャットでのお問い合わせも大歓迎です！</p>
+                    </div>
+                    <div class="ques">
+                        <p>ライブチャットでいつでもお問い合わせいただけます。</p>
+                        <p>Eメール：LOGO8888.jp@LOGO888.net</p>
+                        <h2>日本語サポートの対応時間</h2>
+                        <p>メール・チャットともに、</p>
+                        <p>通常、応答にかかる時間: 30-180秒</p>
+                        <p>月 - 金 12:00 - 19:00 (日本時間)</p>
+                        <p>土 - 日 15:00 - 19:00 (日本時間)</p>
+                    </div>
+                    <div class="us">
+                        <p>ようこそFORTUNAへ！</p>
+                        <p>
+                            当サイトは安心かつ安全な一流カジノゲームです。また、アジア地域にて非常に公平性があるゲーミングプロバイダーと提携を
+                            し、ユーザー満足の向上や信頼できる環境を築くように力を尽くしておりますので、最高のオンラインカジノゲームをお楽しみ
+                            頂けます。 当サイトには専属の日本語カスタマースタッフが在籍しております。問題がございました場合は、解決に向けて全
+                            力で対応いたします。ご意見、ご感想、問題、ご質問等がございましたら、ライブチャットまたはメールにてご連絡をお願い申
+                            し上げます。ユーザー様からのご連絡をいつでもお待ちしております。
+                        </p>
+                        <p>また、当サイトのカスタマーサービスは365日対応しております！</p>
+                        <p>
+                            当サイトでは、ユーザー様に安心して楽しくお楽しみいただけるように、ライブカジノ、スロット、スポーツベット、ジャック
+                            ポット、ルーレット、ブラックジャック、魚釣りゲームなど、多種多様なゲームをご用意しております。
+                        </p>
+                        <p>
+                            お客様からのご意見、ご感想を参考にさせて頂き今後も多くのカジノゲームをご提供させていただきますので、ご愛顧のほどよ
+                            ろしくお願い申し上げます。
+                        </p>
+                    </div>
+                    <div class="us">
+                        <p>
+                            FORTUNA（以下「当サイト」）は、当サイトを運営する国のデータ保護法、および規制に準拠して、当サイトを利用またはアカウ
+                            ントを開設されるお客様(以下、「お客様」)の個人情報を処理することを保証します。当社にて管理・保護致しますので、ご安
+                            心ください。
+                        </p>
+                        <p>当社はお客様の個人情報を最重要視しておりますので、以下の方針に沿った事業運営に取組み、社会的責任を果たして参ります</p>
+                        <p>1.顧客情報保護方針</p>
+                        <p>
+                            お客様が当サイトアカウント登録の際にご入力いただいた個人情報（氏名、電話、メールアドレス、住所、生年月日等）を第
+                            三者に開示・提供することは致しません。
+                        </p>
+                        <p>2.ドメイン認証 SSL</p>
+                        <p>
+                            当サイトでは、お客様の個人情報を保護するために SSL(Secure Socket Layer)というセキュリティシステムを採用していま
+                            す。お客様が入力される氏名や住所、電話番号などの個人情報及び勝敗結果、入出金額は、SSL により自動的に暗号化されて
+                            送受信しており、お客様の個人情報を外部の第三者が通信傍受できないよう対策をとっております。当社は、機密事項の保護
+                            に厳重に努めておりますので、安心してご利用ください。
+                        </p>
+                    </div>
+                    <div class="us">
+                        <h2>1. はじめに</h2>
+                        <p>
+                            1. お客様（以下、「お客様」または「プレイヤー」）は LOGO888.net（以下、「当サイト」）を利用、また、当サイトに
+                            アカウントを開設することにより、当サイト上で閲覧可能である利用規約、個人情報保護方針、カジノゲームのルールやボーナ
+                            ス、特別オファーの宣伝に関する規約や条件に沿って当サイトをご利用いただくことに同意したとみなされます。上記に言及さ
+                            れた全ての規約は「規約」のページからご覧いただけますので、合意する前に注意深くお読みください。もし「利用規約」に沿
+                            ってのご利用、または「利用規約」自体に同意いただけない場合は、アカウントの開設や当サイトの継続利用をお止めくださ
+                            い。当サイトをご利用いただくという行為自体が、「利用規約」に同意いただく意思表示とみなされます。「利用規約」は 
+                            2021/06/20より施行されます。
+                        </p>
+                        <h2>2. 当事者</h2>
+                        <p>
+                            1. 当サイトはキュラソー政府からライセンス（#365/JAZ）認可を受け、規制に準拠しており、規制と法律に則って事業運営
+                            を行っております。すべての賭けゲームが利用可能でございます。
+                        </p>
+                        <p>
+                            当サイトは、Astrobet N.V., Ltd.（以下、「当社」）が所有し運営、キュラソー政府からライセンス #365/JAZの認可を受け規
+                            制に準拠しています。
+                        </p>
+                        <h2>3. 規約の変更</h2>
+                        <p>
+                            1. 当社は商業的、法的（新しい法律や規制へ適応するための）、またカスタマーサービスの向上等を含む諸々の理由で、規約
+                            を改正、修正、更新、または変更する権利を持っています。最新規約と施行日は当サイト上で確認いただけます。利用規約に対
+                            する認識は各利用者の責任であり、定期的に確認することをお勧めします。当社は、事前の連絡なしにいつでも、当サイト、サ
+                            ービスやソフトウェアを修正したり、サービスを利用するのに必要なシステム仕様の変更を行う権利を持っています。
+                        </p>
+                        <p>
+                            2. 規約やシステムの変更に対し同意いただけない場合は、当サイトの利用を停止いただくか、規約 12 項をご確認後、サポー
+                            トにアカウント凍結についてお問い合わせください。規約の施行日以降に当サイトの何らかの機能をご利用になった場合、利用
+                            者の更新規約に対する認識、拝読の有無に関らず、追記、削除、代替、または規約 2.1 項に準ずる会社情報の変更を含む更新規
+                            約へ同意したとみなされます。
+                        </p>
+                        <h2>4. 法的必要条件</h2>
+                        <p>
+                            1. どのような場合でも当サイトをご利用いただくには、18 歳以上、または法律や司法機関により定められた成人年の年齢以
+                            上であるとし、未成年のご利用は利用規約の違反とみなされます。当社は、未成年のサービス利用がないことを確保するため、
+                            いつでも利用者に年齢証明書の提示を要求する権利を持っています。また、年齢証明書の提示がない場合や未成年の利用が疑わ
+                            れる場合は、お客様のアカウント利用を中止する権利があります。
+                        </p>
+                        <p>
+                            2. インターネット上でのギャンブルは、司法地域によっては違法とみなされる場合があります。当社は、お客様に対し法的な
+                            アドバイスやサービス利用に関する保証を提供することは出来ない旨、また、利用者の司法地域での当サイトサービスの合法性
+                            についていかなる代理行為も行わないことをご了承ください。当サイトのご利用は、お客様のみの意見、方針、リスクによって
+                            決断され、お客様の司法地域での合法性の確認はすべてお客様本人の責任となります。
+                        </p>
+                        <p>
+                            3. 当社は、お客様が法律違反をすることを許容することは出来ません。お客様は自らを代弁し、保証し、当サイトの使用が法
+                            律、法規、規制に適応することに合意していただきます。当社は、お客様による当サイトでの違法、非承認行為に対し一切責任
+                            を負いません。
+                        </p>
+                        <p>
+                            4. 当サイトはアルバ、ボネール島、キュラソー、フランス、オランダ、サバ、シント・マールテン、シンガポール、アメリ
+                            カ、中国、台湾、フィリピンに在住するお客様によるアカウントの 開設、アカウントへの入金やアカウントの使用を禁止して
+                            います。この禁止地域リストは、事前告知の有無に関わらず当社により随時更新されます。あなたがリストの国の居住者、また
+                            はリストにある管轄区域のいずれかに所在する場合、アカウントの開設を許可されていないこと、またアカウントを使用しよう
+                            としないことに同意するとします。当社は、独自の裁量により、入金、残高引出しまたはブロックされたアカウントに置かれた
+                            その他の資金に関する決定をする権利があります。
+                        </p>
+                        <p>
+                            5. 当サイトで得た収益に対する税金や手数料等の支払いは、全てお客様の責任となります。お客様の司法地域で、勝利金への
+                            課税が規定されている場合は、勝利金の管理や該当機関への申告が必要となります。
+                        </p>
+                        <h2>5.アカウントの開設</h2>
+                        <p>
+                            1. アカウント(“Your Account”)を開設するためには、メールアドレス、任意のパスワード、氏名、生年月日、電話番号、住
+                            所等を含む個人情報を正しく登録いただく必要があります。
+                        </p>
+                        <p>
+                            2. 登録していただいているお名前と住所は、身分証明書および関連する確認書類と同じである必要があり、身分証明書の住所
+                            と住所確認書類は一致している必要があります。お客様の ID 確認のため、当サイトは随時身分証明書等（有効期限内のパスポ
+                            ート、ID カード、住所確認書類、クレジットカード等の支払いが可能なカード等の画像を含む）の提出を要求する権利を有し
+                            ます。身分証明の提出がない場合、当サイトはお客様のアカウントを一時閉鎖することもあります。
+                        </p>
+                        <p>
+                            3. 登録の際、お客様が正確な個人情報を提供すること、また登録情報に変更が生じた場合、随時登録情報を更新することを保
+                            証いただきます。上記行動が見られない場合は、アカウントの閉鎖、アカウントの使用制限や入金（ボーナスや勝利金の）の無
+                            効といった処置を取る可能性もあります。
+                        </p>
+                        <p>
+                            4. ご質問がある場合、または登録の際に何らかの問題が発生した場合は、fortuna8888.jp@fortuna888.netにて、Ｅメール
+                            でサポートサービスに問い合わせることができます。
+                        </p>
+                        <p>
+                            5. 当サイトにてご登録頂けるプレイヤー口座は、お一人様、一世帯、一住所、一家族、同一 IP アドレスに対して一口座とさ
+                            せていただいております。いかなる場合においても、各顧客、各世帯、各アドレス、各共有コンピュータ、および共有 IP アド
+                            レスごとに、1 つのアカウントのみ登録してカジノを利用することが許可されます。同一プレイヤーが当サイト上で一つ以上の
+                            アカウントを開設することは 「重複アカウント」と定義し、閉鎖されます。
+                        </p>
+                        <p>
+                            システム審査の結果より同一 IP での登録が判明した場合、詐欺行為調査のためプレイヤーの ID 証明を行う必要があります。
+                            プレイヤーは、写真付き本人確認書類、公共料金の請求書のコピー、またはデジタルコピーを送付してください。
+                        </p>
+                        <p>5.1. 重複アカウントでなされたすべての取引は無効になります。</p>
+                        <p>
+                            5.2. 重複アカウントにて得た全ての収益、賞金やボーナスは没収され、出金された全ての資金は必要に応じて当サイトに返還
+                            されなければなりません。
+                        </p>
+                        <p>
+                            5.3. 当社は、重複アカウントでのボーナスと入金、任意の資金を補償する義務はありません。なお、重複アカウントを介して
+                            行われた賭けのために使用され失われた資金の返還について、独自の裁量で意思決定を行う権利を有します。
+                        </p>
+                        <p>
+                            5.4. 重複アカウントが意図的にカジノにより提供されるボーナスやその他のプロモーションを受け取ることを目的として作成
+                            されたとみなされた場合、また重複アカウントがそれ以前に作成したアカウントで行われた最初の資金の返還を受けることを目
+                            的として作成された場合なども同様、それが意図的な不正行為であると考えられる場合、当サイトは重複アカウントで失われた
+                            資金または重複アカウントへの最初の入金額の返金の要求を受け入れません。当サイトは、重複アカウントが上記のような詐欺
+                            および/または不正行為の目的のみで作成されたことを独自の裁量で決定した場合、この重複アカウントに貯めたすべての資金
+                            をプレイヤーに返還することはありません。
+                        </p>
+                        <h2>6. ご本人様身分証書類認証 :（マネーロンダリング防止）</h2>
+                        <p>
+                            1. お客様が当サイトのサービスの使用権を得るということは、お客様が以下に対し、代弁し、保証し、誓約し、同意するもの
+                            とみなします。
+                        </p>
+                        <p>1.1. お客様は 18 歳未満、又はお客様に適用される法律によって定められた法定年齢や成人年齢未満ではないことです。</p>
+                        <p>
+                            1.2. お客様はアカウント内の資金の正当な所有者であり、登録時やその後（支払い・入金取引の際等）当サイトで提供された
+                            個人情報は全て真実、正確で随時更新されており、不足な情報はなく、アカウントの氏名とクレジット・デビットカードやその
+                            他の当サイト上のアカウントへ入金・資金取得の支払いのためのアカウントの氏名と一致している必要があります。
+                        </p>
+                        <p>
+                            1.3. お客様は、当社のサービスを使用しギャンブルをすることでお金を失う可能性があることを十分理解する責任がありま
+                            す。そして、お客様のサービスのご利用は、お客様のみの意見、方針、リスクによって決断され、損失に対して当社および当サ
+                            イトに対し不当な請求はできません。
+                        </p>
+                        <p>
+                            1.4. お客様は、一般的にインターネット上でのギャンブルや当サイトのサービス全般、ルール、手順についての理解がありま
+                            す。賭けやゲームの詳細情報が正しいかを確認するのはお客様の責任です。
+                        </p>
+                        <p>
+                            2. 規約に同意することでお客様は、身分証や連絡先等の当社が必要とする、または第三者（規制機関等を含む）に必要となる
+                            確認作業（「審査作業」）に同意します。
+                        </p>
+                        <p>3. 審査中は、お客様のアカウントからの資金の引き出しを制限する場合があります。</p>
+                        <p>
+                            4. お客様が当サイトに提供した情報が、不正、不正確、誤解を招く、また不足情報がある場合、お客様の契約を違反とみな
+                            し、当社は、お客様のアカウントを即座に閉鎖、又、サービスの利用を禁止します。それに加え当社が判断するその他の処置を
+                            取る権利を持ちます。
+                        </p>
+                        <p>
+                            5. お客様が成人年齢に達していることの確認が取れない場合は、お客様のアカウントを閉鎖することもあります。もしお客様
+                            が、ギャンブル関連行為をしていた際に未成年であることを判明された場合、お客様のアカウントは閉鎖され、全ての取引は無
+                            効となり、それに伴うお客様によって入金された資金は没収されます。その間にすべてのベットも無効とみなされます。また、
+                            お客様が獲得した勝利金も没収され、お客様の口座から引き出された資金を含めて全額没収されます。
+                        </p>
+                        <h2>7. ユーザーネーム、パスワード、セキュリティ</h2>
+                        <p>
+                            1. お客様がアカウントを開設した後は、（任意であるかどうかに関わらず）ご自身のユーザー ID とパスワードの他人への公
+                            開はおやめください。パスワードを紛失したり忘れた場合は、ログインの下の「パスワードをお忘れですか？」のリンクをクリ
+                            ックすることで、再取得することができます。
+                        </p>
+                        <p>
+                            2. お客様のパスワードの機密性の保持やアカウントでの活動はすべてお客様の責任と成ります。アカウントの利用でお客様自
+                            身や第三者により損失が生じた場合も、お客様の責任となります。
+                        </p>
+                        <p>
+                            3. お客様のアカウントの無許可の使用、盗難、その他セキュリティの侵害があった場合、すぐに当社にお知らせください。必
+                            要があれば、お客様はアカウントの無許可の使用や盗難を証明する証拠を提供することに同意するとします。
+                        </p>
+                    </div>
+                    <div class="us">
+                        <p>
+                            カジノゲームで遊びすぎていませんか？時によりゲームはお客様に幸せと富をもたらしますが、毎回勝利するわけではございま
+                            せん。カジノゲームは、負ける時もございますので、一定の覚悟が必要でございます。お客様ご自身でゲームの責任を取り、負
+                            担できない金額を賭けないようにご注意ください。
+                        </p>
+                        <p>
+                            ゲームで賭け続けることよりも、まずはご自身のゲームスタイルを理解することが何よりも重要でございます。こちらのサイト
+                            (<a href="#">https://gamtest.se/v3/gamcare</a>) から、ご自身のゲームスタイルがどのようなものか無料で判定することができますので、
+                            ぜひご利用くださいませ。
+                        </p>
+                        <p>
+                            また、賭けを抑制されませんと、依存症を引き起こす場合もあり、お客様の体や心に害が及ぶ可能性もございます。そのような
+                            症状が見られた場合は、症状の改善を専門でサポートしている GamCare(<a href="#">http://www.gamcare.org.uk</a>) をご活用くださいま
+                            せ。 私達とともに責任あるゲームを作っていきましょう！
+                        </p>
+                    </div>
+                    <div class="us">
+                        <h2>1. はじめに</h2>
+                        <p>
+                            1. お客様（以下、「プレイヤー」）は、Astrobet N.V., Ltd. （以下、「当社」）が所有、運営する fortuna888.net（以下、
+                            「当サイト」）および当サイトが運営する SNS（Twitter,instagram,Facebook を含めるがこれらに限定されない）に記載する
+                            プロモーション規約および条件に沿って当サイト関連のプロモーションをご利用いただくことに同意します。合意する前に注意
+                            深くお読みください。もし本規約に沿ってのご利用、または本規約自体に同意いただけない場合は、プロモーションに参加する
+                            ことはお止めください。
+                        </p>
+                        <h2>2. プロモーション参加</h2>
+                        <p>1.当社は、当サイトに記載するプロモーションやキャンペーンの内容を予告なしに変更し、また内容を解釈する権利を有します。</p>
+                        <p>
+                            2. プレイヤーが以下のような利用方法で、当社が定める利用規約の情報不備あるいはプロモーションを悪用するあるいは悪用
+                            する意図があると判断した場合、当社は単独の裁量により、プレイヤーからの出金、リベートまたはその他のプロモーションを
+                            拒否、保留あるいはキャンセルする権利を保留し、一時的または永久的にプレイヤーに関するポリシーの取り消し、または当サ
+                            イトへのアクセスを終了させ、およびはプレイヤーのアカウントを閉鎖する権利を有します。当社は、当事者の口座に存在する
+                            可能性のある資金、あるいはゲームで紛失した資金をプレイヤーに返還するいかなる義務も負いません。
+                        </p>
+                        <p>2.1. ボーナスを何度も受け取るために当サイトで新しいアカウントを作成すること。</p>
+                        <p>2.2. 定期的に当サイトのプロモーションを受け取るために複数のアカウントを作成すること。</p>
+                        <p>2.3. 当サイトのボーナス、プロモーション、オファーなどから不正に利益獲得の企みを行うこと。</p>
+                        <p>
+                            3.当サイトのご利用はお一人様 1 アカウントのみ可能です。同顧客、同世帯、同アドレス、同一口座情報、同一 IP、共有コン
+                            ピューター、共有 IP ごとに 1 つのアカウントしか登録できないことを指します。上記を発見した場合、家族や友人等（これら
+                            に限定されない）の場合でも、「重複アカウント」とみなし、アカウントは閉鎖され、損失損害に対して当社は一切の責任を負
+                            いません。
+                        </p>
+                        <p>
+                            4. 当社が行うプロモーションは、プレイヤーへの義務として行うものではありません。 当社は、ゲームプロバイダーなどの
+                            第三者が行うプロモーションのエラーについては一切の責任を負いません。当社は、このようなエラーを回避するための可能な
+                            限りの全てを行いますが、その発生については一切の責任を負いません。
+                        </p>
+                        <p>5. 特別な記載がない限り、同時に複数のボーナスは獲得できません。</p>
+                        <p>6. 一度獲得したボーナスの再獲得、他のプロモーションへの同時参加はできません。</p>
+                        <p>7. 個人情報（氏名、住所、電話番号の認証）を完備していない場合、プロモーションに参加していただけません。</p>
+                        <p>8. プロモーションに参加する場合、特に記載がない限り、賭け条件の消化は 30 日以内に完成してください。</p>
+                        <h2>3. ボーナス金</h2>
+                        <p>
+                            1.当サイトにご登録いただいた際、または当サイトの会員である期間は、プレイヤーにはボーナスが賞与される場合がありま
+                            す。 ボーナスを希望しない場合は、当社カジノのカスタマーサポート（fortuna8888.jp@fortuna888.net）までご連絡くださ
+                            い。
+                        </p>
+                        <p>
+                            2.ボーナスを獲得した場合、それぞれの利用規約を十分に理解のうえ、ご遊戯ください。ボーナスによっては、それぞれ適用
+                            される規約が追加される場合もあり、獲得時にカスタマーサポートまでご確認ください。 
+                        </p>
+                        <h2>4. ウォレット</h2>
+                        <p>1. プロモーションによってボーナスは異なるウォレットに進呈されます。</p>
+                        <p>1.1. 賭け条件を達成しないと、メインウォレットに振替できません。</p>
+                        <p>1.2. 基本的にはボーナスはボーナスウォレットに進呈されます、ボーナスウォレットは５倍の賭け条件が設定されています。</p>
+                        <p>禁止ゲームでのプレイは賭け条件に含みません。</p>
+                        <p>1.3. ボーナスウォレットからゲームウォレットに振替時、最低金額は＄ 10 からとなります。</p>
+                        <h2>5. 賭け条件</h2>
+                        <p>
+                            1. ボーナスの賭け条件は、入金額とボーナス額の合計に対して計算されます。それぞれのボーナスには特定の賭け条件があり
+                            ます。それぞれのボーナスの賭け条件は、各ボーナス規約にて規定されています。
+                        </p>
+                        <p>2. ボーナスによって賭け条件など制限が異なりますので、プレイ開始前に、ボーナスに関する詳細を一度ご確認ください。</p>
+                        <p>
+                            3. 全ての賭けが、賭け条件としてカウントされるわけではありません。スロットゲームのほとんどは 100％となります。これ
+                            らのパーセンテージは変更される場合もありますので、特定のゲームの賭け条件のパーセンテージに関してはカスタマーサポー
+                            トまでお問い合わせください。
+                        </p>
+                        <p>
+                            4. ゲームの種類によってベット額は異なる消化率にて賭け条件に反映されます。また、プロモーションによってゲームの種類
+                            別に消化率が異なる場合もございますので、前もってご確認ください。
+                        </p>
+                        <p class="remind">4.1.スロットゲーム／シューティングゲーム：100%</p>
+                        <p class="remind">4.2.ライブカジノ／その他ゲーム：20%</p>
+                        <p class="remind">4.3.e スポーツベット：0%</p>
+                        <p>
+                            5. ボーナスによって、賭け条件にカウントされるパーセンテージが変わる場合がありますが、その情報はボーナス特典の規約
+                            に規定されています。それぞれの規約をご確認ください。
+                        </p>
+                        <p>6. ベット額の一部を返金する場合、下記のようなベットはボーナスの賭け条件を完全に満たさないことになっています。</p>
+                        <p>6.1. ボーナスの有効期限が切れた後に終了するスポーツのプロモーション。</p>
+                        <p>6.2. 別のプロモーションにベットをした場合。</p>
+                        <h2>6. パートナープロモーション</h2>
+                        <p>
+                            1. 当サイトから、当サイトのアフィリエイトパートナーへ提供している特別プロモーションの権利は全て当サイトが所有して
+                            おります。特別な記載がない場合は、本規約および当サイト「プロモーション」ページが正式情報となります。
+                        </p>
+                        <p>
+                            2. パートナーによって、パートナーサイトが最新状態に更新されておらず、古い情報でプレイをされた場合でも、当サイトで
+                            は責任を負いません。当サイトおよび本利用規約が正式となりますので、パートナープロモーションをご利用になる場合、当サ
+                            イトを随時ご確認ください。
+                        </p>
+                        <h2>7. 禁止ゲーム</h2>
+                        <p>
+                            1. 特別な記載がない場合、下記機種が禁止ゲームです。プロモーションに参加する場合、禁止ゲームをプレイされたらプロモ
+                            ーションの参加資格がなくなります。またプロモーションで得た全ての勝利金は当社が没収いたします。
+                        </p>
+                        <p>1.1. Collect ボタンがある機種</p>
+                        <p>
+                            Beautiful Bones / Rage to Riches / Tower Quest / Pearls of India / Eye of the Kraken / Stardust / Magic of Sahara /
+                            Scrooge / Castle Builder 2 / Cool Buck - 5  Reel / Peek-a-Boo - 5 Reel / Rabbit In The Hat / Tomb Raider Secret of the 
+                            Sword / Zombie Hoard / Village People Macho Moves / Tuts Twister / Spina Colada / DWARF MINE / VIKINGS GO 
+                            BERZERK / DOUBLE DRAGONS / CAZINO COSMOS / WOLF HUNTERS / Vikings go to Hell / Baron Samedi / Valley of 
+                            the Gods / Summon & Conquer / Symbols of Egypt / Gem Saviour / Bombuster / Dynamite Riches / Pirates Plenty /
+                            Pirates' Plenty Battle For Gold / Three Musketeers / Ice Cave / Streak of Luck / Loony Blox / Wizards Want War! / 
+                            Egyptian Dreams Deluxe / Knockout Football / Presto! / London Hunter / Santa's Village / Rolling Roger / Take The 
+                            Bank ...
+                        </p>
+                        <p>2. すべてのビデオポーカーとテーブルゲームとアーケードとチェス機種。</p>
+                        <h2>8. 禁止行為</h2>
+                        <p>
+                            1. 当社は、随時に取引、ゲーム履歴を調査する権利を持っています。当社の裁量により乱用とみなす戦略でプレイを行うプレ
+                            イヤーに対し、ボーナス、勝ち金及びリベートなどを無効とする権利を有しています。
+                        </p>
+                        <p>
+                            2. プロモーションに参加するプレイヤーが、実際のボーナス金額より多くの金額をもらうことを目的として、下記行為を始め
+                            とする詐欺行為（下記に限定されない）を行った場合、当社は該当プレイヤーを将来すべてのプロモーションから直ちに除外し
+                            ます。
+                        </p>
+                        <p>
+                            2.1. 賭け条件を増やすためにルーレットで赤と黒に同時に賭ける、最小限の賭けを意図的にテーブル上のほぼ全てのところに
+                            賭ける。
+                        </p>
+                        <p>
+                            3. 当サイトでプレイする場合は、以下の賭け方は違法となります。下記行為を発見した場合は直ちに全ての収益、勝利金、ボ
+                            ーナスは当社によって没収されます。また、下記に限定されず当社が違法と判断した場合も直ちに全ての収益、勝利金、ボーナ
+                            スは当社によって没収されます。
+                        </p>
+                        <p>3.1. オポジットベット（ルーレット：赤黒を同時にベットする、バカラ：プレイヤーとバンカーを同時にベットする）。</p>
+                        <p>
+                            3.2. ライブゲームのルーレットで 25 個以上の数字（25 個を含む）をカバーするスプレッド．コンビネーションなどのリスク
+                            ヘッジベットすること。
+                        </p>
+                        <p>3.3. 極力リスクを低くする攻略法や攻略ソフトの利用。</p>
+                        <p>
+                            3.4.プロモーションに参加する際に、Collect ボタンがある機種でフリースピンを貯め、その後出金を目的として別途入金
+                            し、キャッシュプレイで該当機種にて勝利金を獲得するような投機的な手段は禁止されております。
+                        </p>
+                        <p>
+                            4.当社が、ボーナスや勝利金が悪用または乱用されたと判断した場合は、ボーナス、勝利金をすべて無効およびアカウントを
+                            即時に閉鎖する権利を有します。
+                        </p>
+                        <h2>9. 当社の権利</h2>
+                        <p>
+                            1.当社は、ボーナス、プロモーションに関する規約をいつでも変更する権利を有しており、変更や更新の確認は随時、プレイ
+                            ヤーの責任とみなします。
+                        </p>
+                        <p>
+                            2.当社は、当サイトのプロモーション、当社運営の SNS など(Twitter,instagram,Facebook を含めるがこれらに限定されな
+                            い）に関連するプロモーションを予告なしに終了する権利およびプロモーションに対する全ての最終決定権を有します。
+                        </p>
+                        <p>
+                            3.本規約に規定されている／いないに問わず、当社が違法または詐欺行為だと判断した場合、当社がプロモーションに関する
+                            全ての金額（勝利金やボーナス額を含めるがこれに限定されない）を没収いたします。
+                        </p>
+                        <p>
+                            4.ボーナスの申請（リベートを除く）に利用した入金額は、プロモーションの審査対象に含まれます。（※ただし禁止ゲーム
+                            の制限なし）
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <nav class="sideBar">
+        <!--邀請會員-->
+        <button class="inviteBtn">
+            <a href="./invite.html"></a>
+        </button>
+        <!--goTop-->
+        <button class="goTop">
+            <i></i>
+        </button>
+    </nav>
+    <footer>
+        <!--上部-->
+        <div class="top">
+            <div class="payments">
+                <div class="title">
+                    <p>決済方法</p>
+                    <p>/</p>
+                    <p>SAFE PAYMENTS</p>
+                </div>
+                <div class="box">
+                    <div class="bank"></div>
+                    <div class="usdt"></div>
+                    <div class="vega"></div>
+                    <div class="imove"></div>
+                    <div class="sticpay"></div>
+                    <div class="iwallet"></div>
+                    <div class="tigerpay"></div>
+                </div>
+            </div>
+            <div class="partner">
+                <div class="title">
+                    <p>ゲームプロバイダー</p>
+                    <p>/</p>
+                    <p>GAME PROVIDERS</p>
+                </div>
+                <div class="box">
+                    <div class="ag"></div>
+                    <div class="sa"></div>
+                    <div class="dg"></div>
+                    <div class="tpg"></div>
+                    <div class="og"></div>
+                    <div class="sp"></div>
+                    <div class="mg"></div>
+                    <div class="pp"></div>
+                    <div class="gh"></div>
+                    <div class="elk"></div>
+                    <div class="ftp"></div>
+                    <div class="pg"></div>
+                    <div class="bng"></div>
+                    <div class="ab"></div>
+                    <div class="pls"></div>
+                    <div class="rsg"></div>
+                    <div class="bp"></div>
+                    <div class="redtiger"></div>
+                    <div class="ifun"></div>
+                    <div class="redrake"></div>
+                    <div class="ely"></div>
+                    <div class="atux"></div>
+                    <div class="evoplay"></div>
+                    <div class="sport"></div>
+                    <div class="png"></div>
+                    <div class="relax"></div>
+                    <div class="wm"></div>
+                    <div class="ygg"></div>
+                    <div class="net"></div>
+                    <div class="jili"></div>
+                    <div class="nolimit"></div>
+                    <div class="evo"></div>
+                </div>
+            </div>
+        </div>
+        <!--下部-->
+        <div class="footerList">
+            <div class="center">
+                <ul>
+                    <li class="news">
+                        <p class="title">最新のお知らせ</p>
+                        <button onclick="openNews()">人気</button>
+                        <button onclick="openNews()">ノーマル</button>
+                    </li>
+                    <li class="vip">
+                        <p class="title">VIPクラブ</p>
+                        <button onclick="window.location.href='./vip.html'">VIPレベル</button>
+                    </li>
+                    <li>
+                        <p class="title">よくある質問</p>
+                        <button onclick="window.location.href='./help.html'">プロモーション</button>
+                        <button onclick="window.location.href='./help.html'">入出金と振替</button>
+                        <button onclick="window.location.href='./help.html'">入出金方法</button>
+                        <button onclick="window.location.href='./help.html'">登録とアカウント</button>
+                        <button onclick="window.location.href='./help.html'">アフィリエイト</button>
+                        <button onclick="window.location.href='./help.html'">お問い合わせ</button>
+                    </li>
+                    <li>
+                        <p class="title">当社について</p>
+                        <button onclick="window.location.href='./help.html'">当社について</button>
+                        <button onclick="window.location.href='./help.html'">ノーマル</button>
+                        <button onclick="window.location.href='./help.html'">利用規約</button>
+                        <button onclick="window.location.href='./help.html'">責任あるゲーミング</button>
+                        <button onclick="window.location.href='./help.html'">プロモーション</button>
+                    </li>
+                    <li>
+                        <button class="serviceBtn" onclick="window.location.href='./help.html'">チャット</button>
+                        <button class="iframe-box">
+                            <img src="../images/icon/GC-icon.png">
+                        </button>
+                        <button class="twitter" onclick="window.location.href='//twitter.com/AU8_Japan'"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="filter">
+        <!--遊戲投注彈窗-->
+        <div class="jumpWindow betWindow sportGame">
+            <div class="title">
+                <p>クイック振替</p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p>プラットホーム</p>
+                    <div class="smallTitle">36588 SPORTS</div>
+                </div>
+                <div class="row">
+                    <p>メインウォレット</p>
+                    <input type="text" value="$9999" readonly>
+                </div>
+                <div class="row">
+                    <i class="trans_arrow"></i>
+                </div>
+                <div class="row">
+                    <p>36588 SPORTS</p>
+                    <input type="text" value="$0" readonly>
+                </div>
+                <div class="row">
+                    <p>振替金額</p>
+                    <input type="text" value="$100">
+                </div>
+                <div class="row forBtn">
+                    <div class="btnBox">
+                        <button type="button">¥100</button>
+                        <button type="button">¥500</button>
+                        <button type="button">¥1000</button>
+                        <button type="button">¥3000</button>
+                        <button type="button">¥5000</button>
+                        <button type="button">¥10000</button>
+                        <button type="button">全て</button>
+                    </div>
+                </div>
+                <div class="row forBtn">
+                    <button type="button" class="check">確認</button>
+                </div>
+            </form>
+            <div class="enterGame">
+                <button type="button">ゲームに入る</button>
+            </div>
+        </div>
+        <div class="jumpWindow betWindow liveGame">
+            <div class="title">
+                <p>クイック振替</p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p>プラットホーム</p>
+                    <div class="smallTitle">AG CASINO</div>
+                </div>
+                <div class="row">
+                    <p>メインウォレット</p>
+                    <input type="text" value="$9999" readonly>
+                </div>
+                <div class="row">
+                    <i class="trans_arrow"></i>
+                </div>
+                <div class="row">
+                    <p>AG CASINO</p>
+                    <input type="text" value="$0" readonly>
+                </div>
+                <div class="row">
+                    <p>振替金額</p>
+                    <input type="text" value="$100">
+                </div>
+                <div class="row forBtn">
+                    <div class="btnBox">
+                        <button type="button">¥100</button>
+                        <button type="button">¥500</button>
+                        <button type="button">¥1000</button>
+                        <button type="button">¥3000</button>
+                        <button type="button">¥5000</button>
+                        <button type="button">¥10000</button>
+                        <button type="button">全て</button>
+                    </div>
+                </div>
+                <div class="row forBtn">
+                    <button type="button" class="check">確認</button>
+                </div>
+            </form>
+            <div class="enterGame">
+                <button type="button">ゲームに入る</button>
+            </div>
+        </div>
+        <!--最新公告-->
+        <div class="jumpWindow news">
+            <div class="title">
+                <p>最新のお知らせ</p>
+                <i class="close_ic"></i>
+            </div>
+            <!--頁籤-->
+            <ul class="nav">
+                <li class="hot active">人気</li>
+                <li class="normal">ノーマル</li>
+                <li class="deposit">入金</li>
+            </ul>
+            <!--內容-->
+            <ul class="content forHot display">
+                <li>
+                    <div>
+                        <p class="text">人気ゲーム-日本麻雀</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="content forNormal">
+                <li>
+                    <div>
+                        <p class="text">FORTUNAへようこそ!</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="content forDeposit">
+                <li>
+                    <div>
+                        <p class="text">プロモーション~ライブカジノリベートボーナス</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">プロモーション~スロットリベートボーナス</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="jumpWindow plsGo">
+            <div class="title">
+                <p>ヒント</p>
+                <i class="close_ic"></i>
+            </div>
+            <div class="content">申し込み完了。KYC審査中です。</div>
+            <div class="btnBox">
+                <button class="close">確認</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+</body>
+</html>

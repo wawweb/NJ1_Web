@@ -1,0 +1,283 @@
+.helpPage {
+    width: 100%;
+    height: auto;
+    min-height: 565px;
+    padding-bottom: 42px;
+
+    .center {
+        width: 1400px;
+        margin: 0 auto;
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        
+        .nav {
+            background: $secondBG;
+            width: 390px;
+            height: auto;
+            border-radius: 5px;
+
+            li {
+                width: 100%;
+                height: auto;
+
+                &.title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 26px;
+                    height: 60px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+    
+                    &:hover,&:active,&.active {
+    
+                        .arrow_ic {
+                            transform: rotate(270deg);
+                        }
+                    }
+    
+                    p {
+                        display: flex;
+                        align-items: center;
+                        color: $choose_Word;
+                        font-size: 22px;
+                        font-weight: bold;
+    
+                        i {
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 23px;
+    
+                            &.bulb {
+                                height: 24px;
+                            }
+
+                            &.aboutUs {
+                                height: 28px;
+                            }
+                        }
+                    }
+    
+                    .arrow_ic {
+                        width: 8px;
+                        height: 16px;
+                        transition: 0.3s all;
+                        transform: rotate(180deg);
+                        margin-right: 23px;
+                    }
+                }
+
+                &.box {
+                    display: none;
+
+                    &.display {
+                        display: block;
+                    }
+
+                    ul {
+                        width: 100%;
+                        height: auto;
+                        
+                        li {
+                            width: 100%;
+                            height: 45px;
+                            box-sizing: border-box;
+                            padding-left: 72px;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            font-size: 18px;
+                            color: $choose_Word;
+    
+                            &:hover,&:active,&.active {
+                                background: $choose_BG;
+                                color: $choose_Active;
+                                font-weight: bold;
+
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .helpWrap {
+            width: 980px;
+            height: auto;
+            background: $secondBG;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            box-sizing: border-box;
+            padding: 44px 58px;
+
+            div {
+                display: none;
+
+                &.display {
+                    display: block;
+                }
+
+                h2 {
+                    margin: 20px 0;
+                    color: $mainFont_1;
+                    font-size: 16px;
+                    font-weight: bold;
+
+                    &:first-child {
+                        margin-top: 0;
+                        font-size: 22px;
+                    }
+                }
+                
+                h3 {
+                    color: $mainFont_1;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin: 10px 0;
+                }
+
+                p {
+                    margin-bottom: 10px;
+                    color: $mainFont_2;
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: 24px;
+
+                    &.remind {
+                        color: $help_remind;
+                    }
+                }
+
+                button {
+                    width: 257px;
+                    height: 42px;
+                    @include mainBtn;
+                }
+
+                a {
+                    color: $link;
+                    text-decoration: none;
+                }
+
+                .img {
+                    display: block;
+
+                    &.online01 {
+                        width: 860px;
+                        height: 736px;
+                    }
+
+                    &.online02 {
+                        width: 862px;
+                        height: 749px;
+                        margin-bottom: 20px;
+                    }
+
+                    &.online03 {
+                        width: 862px;
+                        height: 957px;
+                    }
+
+                    &.online04 {
+                        width: 187px;
+                        height: 144px;
+                    }
+
+                    &.online05 {
+                        width: 275px;
+                        height: 379px;
+                        margin: 10px 0 20px 55px;
+                    }
+                }
+
+                .uploadBox {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 60px 0;
+
+                    .box {
+                        display: block;
+                        width: 48%;
+                        height: auto;
+
+                        &.full {
+                            width: 100%;
+
+                            .innerBox {
+                                padding: 60px 0;
+                            }
+                        }
+
+                        .smallTitle {
+                            color: $mainFont_2;
+                            font-size: 14px;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+
+                        .innerBox {
+                            width: 100%;
+                            height: auto;
+                            background: $help_innerBox_BG;
+                            border-radius: 5px;
+                            border: dashed 3px $help_innerBox_Border;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 30px 0;
+
+                            i {
+                                width: 52px;
+                                height: 49px;
+                                margin-bottom: 10px;
+                            }
+
+                            button {
+                                margin-bottom: 10px;
+                            }
+
+                            .remind {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+
+                .btnBox {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 60px;
+
+                    &.noMar {
+                        margin: 0;
+                    }
+
+                    button {
+
+                        &:last-child {
+                            @include fastBtn;
+                            background: $help_fastBtn_BG;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+                hr {
+                    border-color: $Border;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
+}

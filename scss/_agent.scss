@@ -1,0 +1,250 @@
+.agentPage {
+    background: $innerBG;
+
+    .topBanner {
+        width: 100%;
+        height: 0;
+        padding-top: 26%;
+        margin-top: -50px;
+    }
+
+    .center {
+        width: 1400px;
+        height: auto;
+        margin: 0 auto;
+       
+            .client {
+                width: 1400px;
+                height: auto;
+                padding: 65px 0;
+
+                .title {
+                    color: $mainFont_1;
+                    font-size: 36px;
+                    font-weight: bolder;
+                    text-align: center;
+                    margin-bottom: 38px ;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        width: 72px;
+                        height: 36px;
+                        position: absolute;
+                        top: 0px;
+                        left: 490px;
+                        background-position-x: 0%;
+                    }
+                    &::after {
+                        content: "";
+                        content: "";
+                        width: 72px;
+                        height: 36px;
+                        position: absolute;
+                        top: 0px;
+                        right: 490px;
+                        background-position-x: 100%;
+                    }
+                }
+                .subTitle {
+                    font-size: 16px;
+                    font-weight: bolder;
+                    color: $mainFont_3;
+                    line-height: 30px;
+                    text-align: center;
+                }
+
+                .block {
+                    width: 100%;
+                    height: 839px;
+                    margin: 53px 0 60px;
+                    
+                    .line {
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+
+                        
+                        .long {
+                            width: 868px; 
+                            height: auto ;
+                            padding: 43px 30px;
+                            background: $secondBG;
+                            border-radius: 10px;
+
+                            .top {
+                                width: 100%;
+                                height: 148px;
+                                display: flex; 
+                                justify-content: space-around;
+                                position: relative;
+
+                                .main {
+                                    font-size: 35px;
+                                    color: $money;
+                                    font-weight: bloder;
+                                    text-align: center;
+                                }
+                                .sub {
+                                    font-size: 18px;
+                                    color: $disable;
+                                    font-weight: bold;
+                                    text-align: center;
+                                }
+
+                                .icon_1 {
+                                    width: 121px;
+                                    height: 107px;
+                                }
+
+                                div {
+                                    .main {
+                                        margin: 26px auto;
+                                    }
+                                }
+
+                                &::after {
+                                    content: " ";
+                                    background: $Border;
+                                    width: 100%;
+                                    height: 1px;
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                }
+                            }
+
+                            .down {
+                                display: flex;
+                                justify-content: space-around;
+
+                                .item {
+                                    width: 286px;
+                                    height: 182px;
+                                    position: relative;
+
+                                    .num {
+                                        color: $mainFont_1;
+                                        font-size: 50px;
+                                        font-weight: bolder;
+                                        text-align: center;
+                                        margin-top: 50px;
+                                    }
+
+                                    .info {
+                                        color: $mainFont_2;
+                                        font-size: 20px;
+                                        line-height: 35px;
+                                        text-align: center;
+                                        margin-top: 20px;
+                                    }
+                                    &::after {
+                                        content: "";
+                                        width: 1px;
+                                        height: 165px;
+                                        background: $Border;
+                                        position: absolute;
+                                        top: 34px;
+                                        right: 0;  
+                                    }  
+                                    &:last-child {
+                                        &::after {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .box {
+                            width: 394px;
+                            height: auto;
+                            background: $secondBG;
+                            border-radius: 10px;
+                            padding: 50px 30px;
+                            position: relative;
+
+                            .main {
+                                font-size: 35px;
+                                color: $money;
+                                font-weight: bloder;
+                                text-align: center;
+                                margin-top: 185px;
+                            }
+                            .sub {
+                                font-size: 18px;
+                                color: $disable;
+                                font-weight: bold;
+                                line-height: 30px;
+                                text-align: center;
+                                margin-top: 30px;
+                            }
+
+                            i {
+                                width: 121px;
+                                height: 121px;
+                                position: absolute;
+                                top: 54px;
+                                left: 168px;
+                            }
+                        }
+                    }
+                }
+            }
+  
+        .rulePic {
+            width: 1400px;
+            height: 617px;
+            margin-top: 50px;
+            align-items: center;
+            position: relative;
+        }
+    }
+    .commission {
+        width: 100%;
+        height: auto;
+        background: $secondBG;
+        padding: 97px 0;
+        position: relative;
+
+        .title {
+            color: $mainFont_1;
+            font-size: 36px;
+            font-weight: bolder;
+            text-align: center;
+            margin-bottom: 38px;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 72px;
+                height: 36px;
+                position: absolute;
+                top: 0px;
+                left: 503px;
+                background-position-x: 0%;
+            }
+            
+            &::after {
+                content: "";
+                content: "";
+                width: 72px;
+                height: 36px;
+                position: absolute;
+                top: 0px;
+                right: 503px;
+                background-position-x: 100%;
+            }
+        }
+
+        .subTitle {
+            font-size: 16px;
+            font-weight: bolder;
+            color: $mainFont_3;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+}

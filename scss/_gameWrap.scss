@@ -1,0 +1,385 @@
+.gameWrap {
+    padding-bottom: 30px;
+    background-color: $gameWrapBG;
+
+    //主內容
+    .content {
+        width: 100%;
+        min-width: 1400px;
+        height: auto;
+        margin-bottom: 48px;
+        padding-top: 70px;
+
+        &.slotPage {
+            width: 1400px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .center {
+            width: 1400px;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .textBox {
+            width: 630px;
+            height: auto;
+
+            .title {
+                background: $gameWrap_Linear;
+                -webkit-background-clip: text;
+
+                .big {
+                    font-size: 56px;
+                    font-weight: bold;
+                    letter-spacing: 6px;
+                    color: transparent;
+                }
+            }
+
+            .mainCnt {
+                margin: 40px 0;
+                width: 630px;
+                letter-spacing: 1px;
+                line-height: 24px;
+                font-size: 14px;
+                font-weight: bold;
+                color: $mainFont_1;
+            }
+        }
+
+        .btnBox {
+            width: auto;
+            height: auto;
+
+            .innBox {
+                width: 630px;
+                height: auto;
+
+                ul {
+                    width: auto;
+                    height: auto;
+                    display: grid;
+                    grid-template-columns: 189px 189px 189px;
+                    grid-gap: 15px 15px;
+
+                    li {
+                        width: auto;
+                        height: auto;
+                        cursor: pointer;
+
+                        .imgBox {
+                            font-size: 0;
+                        }
+
+                        p {
+                            width: 100%;
+                            text-align: center;
+                            font-size: 14px;
+                            color: $mainFont_1;
+                            padding-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //slot+fish+board
+    .slotCenter {
+        width: 1400px;
+        height: auto;
+        margin: 0 auto;
+        padding: 16px 0 25px;
+
+        //跑馬燈
+        .marqueeArea {
+            width: 100%;
+            height: 36px;
+            background: $marquee_BG;
+            border-radius: 36px;
+            margin-bottom: 16px;
+
+            .center {
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                padding: 0 10px;
+
+                .marqueeWrap {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .title {
+                        color: $marquee_Title;
+                        font-size: 12px;
+                        font-weight: bold;
+                        width: auto;
+                        flex-shrink: 0;
+                        padding-right: 10px;
+                    }
+
+                    .marquee {
+                        width: 100%;
+                        height: auto;
+                        overflow: hidden;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: $marquee_Word;
+                            display: inline-block;
+                            animation: marquee 10s linear infinite;
+                            padding-left: 100%;
+                            white-space: nowrap;
+                        }
+
+                        @keyframes marquee {
+                            0% {
+                                transform: translate(0%);
+                            }
+
+                            100% {
+                                transform: translate(-100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //內容
+        .slotBody {
+            background: $secondBG;
+            border-radius: 5px;
+
+            //上選單區
+            .nav {
+                margin: 0 26px;
+                height: 70px;
+                border-bottom: solid 1px $Border;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                ul {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+
+                    li {
+                        color: $choose_Word;
+                        width: auto;
+                        height: calc(100% - 3px);
+                        padding: 0 50px;
+                        font-size: 18px;
+                        display: flex;
+                        align-items: center;
+                        border-bottom: solid 3px transparent;
+                        cursor: pointer;
+                        justify-content: center;
+                        position: relative;
+                        font-weight: bold;
+    
+                        &:hover,&:active,&.active {
+                            color: $choose_Active;
+                            border-color: $choose_Border;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 0px;
+                                height: 0px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                bottom: 0;
+                                border-style: solid;
+                                border-width: 0 6px 6px;
+                                border-color: $choose_Border transparent;
+                            }
+                        }
+                    }
+                }
+
+                .search {
+                    position: relative;
+                    width: auto;
+                    height: auto;
+
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 12px;
+                        width: 20px;
+                        height: 20px;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                        }
+                    }
+
+                    input {
+                        width: 330px;
+                        height: 40px;
+                        @include mainInput;
+                        padding-left: 40px;
+                    }
+                }
+            }
+
+            .gameBox {
+                padding: 24px 48px 40px;
+
+                .platformBox {
+                    width: 100%;
+                    height: auto;
+
+                    .platforms {
+                        margin-bottom: 50px;
+                        display: none;
+
+                        &.display {
+                            display: block;
+                        }
+
+                        .pfName {
+                            width: 100%;
+                            height: 70px;
+                            margin-bottom: 15px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            &.active {
+
+                                .back {
+                                    display: block;
+                                }
+
+                                .all {
+                                    display: none;
+                                }
+                            }
+
+                            .all,.back {
+                                @include mainBtn;
+                                width: 137px;
+                                height: 40px;
+                                font-size: 18px;
+
+                                i {
+                                    display: inline-block;
+                                    width: 8px;
+                                    height: 15px;
+                                    transform: scaleX(-1);
+                                    margin-left: 20px;
+                                }
+                            }
+                            .back {
+                                display: none;
+
+                                i {
+                                    margin: 0 20px 0 0;
+                                    transform: scaleX(1);
+                                }
+                            }
+                        }
+
+                        .gameList {
+                            width: 100%;
+                            height: 200px;
+                            display: grid;
+                            grid-template-columns: repeat(5,250px);
+                            grid-gap: 13px 13px;
+                            overflow: hidden;
+
+                            &.active {
+                                height: auto;
+                            }
+
+                            li {
+                                width: auto;
+                                height: 200px;
+                                border: solid 1px $gameWrap_Border;
+                                border-radius: 5px;
+                                overflow: hidden;
+                                cursor: pointer;
+                                box-sizing: border-box;
+                                font-size: 0px;
+                                position: relative;
+
+                                &:hover,&:active,&.active {
+                                    
+                                    .btnBox {
+                                        opacity: 1;
+                                    }
+                                }
+
+                                .textBox {
+                                    width: 100%;
+                                    height: 35px;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 0 20px;
+                                    box-sizing: border-box;
+                                    justify-content: space-between;
+                                    position: relative;
+                                    z-index: 1;
+                                    border-top: solid 1px $gameWrap_Border;
+                                    background: $gameWrap_WordBG;
+
+                                    p {
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        color: $gameWrap_Word;
+                                    }
+
+                                    .love {
+                                        width: 23px;
+                                        height: 21px;
+                                    }
+                                }
+
+                                .btnBox {
+                                    opacity: 0;
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 165px;
+                                    background: $filter;
+                                    top: 0px;
+                                    left: 0px;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    justify-content: space-evenly;
+                                    box-sizing: border-box;
+                                    padding: 30px 0;
+                                    transition: 0.3s all;
+
+                                    button {
+                                        width: 140px;
+                                        height: 40px;
+                                        @include eventBtn;
+
+                                        &:nth-of-type(2) {
+                                            @include eventBtn_2;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

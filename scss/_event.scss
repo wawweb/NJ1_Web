@@ -1,0 +1,248 @@
+.eventWrap {
+    width: auto;
+    height: auto;
+    background: $innerBG;
+
+    //上標題
+    .eventTitle {
+        width: 100%;
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        p {
+            font-size: 61px;
+            color: $mainFont_1;
+            font-weight: bold;
+        }
+    }
+    
+    //內容
+    .eventBody {
+        width: 1400px;
+        height: auto;
+        min-height: 600px;
+        padding: 28px 0 24px;
+        margin: 0 auto;
+        display: flex;
+
+        //左
+        .side {
+            width: 357px;
+            margin-right: 13px;
+            height: auto;
+            background: $secondBG;
+            border-radius: 5px;
+
+            ul {
+                width: 100%;
+                height: auto;
+
+                li {
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: solid 1px $Border;
+                    position: relative;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $choose_BG;
+
+                        i {
+                            background: none;
+
+                            &::before {
+                                display: block;
+                            }
+                        }
+
+                        span {
+                            color: $choose_Active;
+                        }
+                    }
+                    &:active,&.active {
+
+                        i {
+                            background: none;
+
+                            &::before {
+                                display: block;
+                            }
+                        }
+
+                        span {
+                            color: $choose_Active;
+                        }
+                    }
+
+                    i {
+                        display: block;
+                        width: 23px;
+                        height: 23px;
+                        margin: 0 28px;
+                        overflow: hidden;
+                        position: relative;
+
+                        &::before {
+                            display: none;
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: -23px;
+                            top: 0;
+                            filter: drop-shadow(23px 0px 0px #ff4719);
+                        }
+                    }
+
+                    span {
+                        font-weight: bold;
+                        font-size: 22px;
+                        color: $choose_Word;
+                    }
+                }
+            }
+        }
+
+        //右
+        .eventList {
+            display: none;
+            width: 1028px;
+
+            &.display {
+                display: block;
+            }
+
+            .eventBox {
+                background: $secondBG;
+                display: flex;
+                margin-bottom: 20px;
+                border-radius: 5px;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                ul {
+                    width: 252px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 30px 27px;
+
+                    .title {
+                        font-size: 29px;
+                        font-weight: bold;
+                        letter-spacing: 3px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color: $mainFont_1;
+                    }
+
+                    .btnBox {
+                        width: 100%;
+                        height: auto;
+
+                        button {
+                            width: 100%;
+                            height: 37px;
+                            @include footerBtn;
+                        }
+                    }
+                }
+            }
+        }
+
+        //內頁
+        .eventDetail {
+            display: none;
+            width: 1028px;
+            background: $secondBG;
+            border-radius: 5px;
+
+            &.display {
+                display: block;
+            }
+
+            .title {
+                padding: 22px 40px 5px;
+                display: flex;
+                align-items: center;
+
+                p {
+                    font-size: 34px;
+                    font-weight: bold;
+                    color: $mainFont_1;
+                }
+
+                button {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 20px;
+                }
+            }
+
+            .btnBox {
+                width: 100%;
+                height: auto;
+                padding: 0 40px 18px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: flex-end;
+
+                a {
+                    display: inline-block;
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 8px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .info {
+                padding: 25px 40px;
+                
+                p {
+                    color: $mainFont_2;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    &.infoTitle {
+                        font-size: 26px;
+                        margin-bottom: 30px;
+                        color: $mainFont_3;
+                    }
+
+                    &.smallTitle {
+                        font-size: 16px;
+                        margin: 30px 0 20px;
+                        color: $time;
+                    }
+
+                    &.remind {
+                        color: $remind;
+                        margin-bottom: 20px;
+                    }
+
+                    &.mar {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+
+            .detailFooter {
+                width: 100%;
+                height: 130px;
+                padding-bottom: 60px;
+            }
+        }
+    }
+}

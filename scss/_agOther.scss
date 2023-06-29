@@ -1,0 +1,431 @@
+.agOther {
+    width: 100%;
+    height: auto;
+
+    .topBanner {
+        width: 100%;
+        height: 0;
+        padding-top: 26%;
+        margin-top: -50px;
+    }
+
+    .center {
+        width: 1400px;
+        min-width: 1400px;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+        
+        //利用規約
+        .agRule {
+            width: 100%;
+            height: auto;
+            display: flex;
+
+            .leftArea {
+                width: 25%;
+                height: center;
+                position: relative;
+
+                ul {
+                    display: table;
+                    border-left: 9px solid $lightBG;
+                    border-radius: 3px;
+                    padding-left: 35px;
+                    margin: 130px 0 0 13px;
+                    position: relative;
+
+                    li {
+                        width: auto;
+                        height: 70px;
+                        color: $disable;
+                        font-size: 20px;
+                        font-weight: bold;
+                        position: relative;
+                        cursor: pointer;
+
+                        &:hover,&:active,&.active {
+                            color: $mainFont_1;
+
+                            &::before {
+                                content: "";
+                                width: 53px;
+                                height: 53px;
+                                background: $lightBG;
+                                border-radius: 40px;
+                                position: absolute;
+                                top: -11px;
+                                left: -66px;
+                            }
+                        }
+                    }
+                    ::before {
+                        content: "";
+                        width: 25px;
+                        height: 25px;
+                        background: $lightBG;
+                        border-radius: 40px;
+                        position: absolute;
+                        top: -1px;
+                        left: -52px;
+                    }
+
+                    ::after {
+                        content: " ";
+                        width: 40px;
+                        height: 40px;
+                        background-position-x: 50%;
+                        position: absolute;
+                        top: -4px;
+                        left: -58px;
+                    }
+                }
+            }
+       
+            .rightArea {
+                width: 75%;
+                height: auto;
+                padding: 44px 0 80px ;
+
+                .title {
+                    color: $mainFont_1;
+                    font-size: 36px;
+                    font-weight: bolder;
+                    text-align: center;
+                    margin-bottom: 38px ;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        width: 72px;
+                        height: 36px;
+                        position: absolute;
+                        top: 0px;
+                        left: 594px;
+                        background-position-x: 0%;
+                    }
+                    &::after {
+                        content: "";
+                        content: "";
+                        width: 72px;
+                        height: 36px;
+                        position: absolute;
+                        top: 0px;
+                        right: 594px;
+                        background-position-x: 100%;
+                    }
+                }
+
+                .outter {
+                    width: 90%;
+                    max-height: 734px;
+                    background: $secondBG;
+                    border-radius: 10px;
+                    padding: 36px 29px;
+                    overflow: auto;
+                    &::-webkit-scrollbar {
+                        width: 8px;
+                        height: 8px;
+                    }
+            
+                    &::-webkit-scrollbar-thumb {
+                        background: $scrollBar_thumb;
+                        border-radius: 10px;
+                    }
+            
+                    &::-webkit-scrollbar-track {
+                        background: $scrollBar_track;
+                        border-radius: 10px;
+                    }
+                    
+                    .contentBlock {
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 20px;
+        
+                        .subTitle {
+                            color: $mainFont_1;
+                            font-size: 25px;
+                            font-weight: bolder;
+                            margin-bottom: 25px;
+                        }
+                        
+                        .info {
+                            color: $disable;
+                            font-size: 20px;
+                            line-height: 40px;
+                            font-weight: bold;
+
+                            .chapter {
+                                color: $money;
+                            }
+
+                            .keyword {
+                                color: $choose_Active;
+                            }
+                        }
+
+                        .chapterBox {
+                            width: 98%;
+                            height: auto;
+                            margin: 5px 20px;
+
+                            .infoChapter {
+                                color: $disable;
+                                font-size: 20px;
+                                line-height: 40px;
+                                font-weight: bold;
+    
+                                .chapter {
+                                    color: $money;
+                                }
+                            }
+                        }
+                    }
+                }
+
+               
+            }
+        }
+
+        //常見問題
+        .agQA {
+            width: 100%;
+            height: auto;
+            display: flex;
+
+            .leftArea {
+                width: 25%;
+                height: center;
+                position: relative;
+                
+                ul {
+                    display: table;
+                    border-left: 9px solid $lightBG;
+                    border-radius: 3px;
+                    padding-left: 35px;
+                    margin: 130px 0 0 86px;
+                    position: relative;
+
+                    li {
+                        width: auto;
+                        height: 70px;
+                        color: $disable;
+                        font-size: 20px;
+                        font-weight: bold;
+                        position: relative;
+                        cursor: pointer;
+
+
+                        &:hover,&:active,&.active {
+                            color: $mainFont_1;
+                            
+                            &::before {
+                                width: 53px;
+                                height: 53px;
+                                top: -11px;
+                                left: -66px;
+                            }
+                        }
+                    }
+                    ::before {
+                        content: "";
+                        width: 25px;
+                        height: 25px;
+                        background: $lightBG;
+                        border-radius: 40px;
+                        position: absolute;
+                        top: -1px;
+                        left: -52px;
+                    }
+                    
+                    ::after {
+                        content: " ";
+                        width: 40px;
+                        height: 40px;
+                        background-position-x: 50%;
+                        position: absolute;
+                        top: -4px;
+                        left: -58px;
+                    }
+                }
+            }
+       
+            .rightArea {
+                width: 75%;
+                height: auto;
+                padding: 44px 0 80px ;
+
+                .title {
+                    color: $mainFont_1;
+                    font-size: 36px;
+                    font-weight: bolder;
+                    text-align: center;
+                    margin-bottom: 38px ;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        width: 72px;
+                        height: 36px;
+                        position: absolute;
+                        top: 0px;
+                        left: 616px;
+                        background-position-x: 0%;
+                    }
+                    &::after {
+                        content: "";
+                        width: 72px;
+                        height: 36px;
+                        position: absolute;
+                        top: 0px;
+                        right: 616px;
+                        background-position-x: 100%;
+                    }
+                }
+
+                .outter {
+                    width: 90%;
+                    max-height: 734px;
+                    background: $secondBG;
+                    border-radius: 10px;
+                    padding: 36px 29px;
+                    overflow-y: auto;
+                    
+                    &::-webkit-scrollbar {
+                        width: 8px;
+                        height: 8px;
+                    }
+            
+                    &::-webkit-scrollbar-thumb {
+                        background: $scrollBar_thumb;
+                        border-radius: 10px;
+                    }
+            
+                    &::-webkit-scrollbar-track {
+                        background: $scrollBar_track;
+                        border-radius: 10px;
+                    }
+    
+
+                    
+                    .contentBlock {
+                        width: 100%;
+                        height: auto;
+                        margin-top: 177px;
+                        position: relative;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+
+                        .tiTle {
+                            color: $mainFont_1;
+                            font-size: 25px;
+                            font-weight: bolder;
+                            margin-bottom: 25px;
+                        }
+
+                        .minBox {
+                            margin-bottom: 47px;
+
+                            .subTitle {
+                                color: $mainFont_1;
+                                font-size: 20px;
+                                font-weight: bolder;
+                                line-height: 40px;
+                                margin-bottom: 10px;
+                            }
+                            
+                            .info {
+                                color: $disable;
+                                font-size: 20px;
+                                line-height: 40px;
+                                font-weight: bold;
+    
+                                .chapter {
+                                    color: $money;
+                                }
+    
+                                .keyword {
+                                    color: $choose_Active;
+                                }
+                            }
+                        } 
+                        
+                        .line {
+                            width: 100%;
+                            height: 1px;
+                            background: $Border;
+                            position: absolute;
+                            bottom: -78px;
+                            left: 0;
+                        }
+                    }
+
+                }
+
+               
+            }
+        }
+            
+        //個人情報保護方針
+        .agPersonal {
+            width: 100%;
+            height: auto;
+            padding: 66px 0 114px;
+            position: relative;
+
+            .title {
+                color: $mainFont_1;
+                font-size: 36px;
+                font-weight: bolder;
+                text-align: center;
+                margin-bottom: 38px ;
+                position: relative;
+    
+                &::before {
+                    content: "";
+                    width: 72px;
+                    height: 36px;
+                    position: absolute;
+                    top: 0px;
+                    left: 432px;
+                    background-position-x: 0%;
+                }
+                &::after {
+                    content: "";
+                    content: "";
+                    width: 72px;
+                    height: 36px;
+                    position: absolute;
+                    top: 0px;
+                    right: 432px;
+                    background-position-x: 100%;
+                }
+            }
+
+            .contentBlock {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+
+                .subTitle {
+                    color: $mainFont_1;
+                    font-size: 25px;
+                    font-weight: bolder;
+                    margin-bottom: 25px;
+                }
+                
+                .info {
+                    color: $mainFont_2;
+                    font-size: 20px;
+                    line-height: 40px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+}

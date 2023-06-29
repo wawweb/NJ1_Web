@@ -1,0 +1,202 @@
+.registerWrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bigBox {
+        width: auto;
+        height: auto;
+        border-radius: 17px;
+        overflow: hidden;
+        border: solid 1px $register_Border;
+        background: $register_BG;
+
+        .title {
+            width: 865px;
+            height: 82px;
+            background: $register_TitleBG;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                color: $register_Title;
+                font-size: 25px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+
+                i {
+                    display: block;
+                    width: 44px;
+                    height: 44px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .inputBox {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 42px 60px 0;
+            display: flex;
+            justify-content: space-between;
+
+            form {
+                width: 48%;
+                height: auto;
+
+                label {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    box-sizing: border-box;
+                    padding-left: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                    
+                    .smallTitle {
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+
+                    div {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+
+                        em {
+                            color: $remind_sp;
+                            font-size: 14px;
+                            font-weight: bold;
+                            position: absolute;
+                            left: 0;
+                        }
+    
+                        input {
+                            width: 100%;
+                            height: 42px;
+                            @include mainInput;
+    
+                            &.line {
+                                padding-left: 50px;
+                            }
+                        }
+
+                        .date_ic,
+                        .eye_ic {
+                            position: absolute;
+                            display: block;
+                            width: 17px;
+                            height: 17px;
+                            right: 20px;
+                        }
+
+                        .line_ic {
+                            position: absolute;
+                            display: block;
+                            width: 32px;
+                            height: 32px;
+                            left: 20px;
+                        }
+
+                        .codeBtn {
+                            width: 142px;
+                            height: 32px;
+                            @include footerBtn;
+                            position: absolute;
+                            right: 5px;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .remind {
+                        width: 340px;
+                        color: $remind_sp;
+                        font-size: 13px;
+                        font-weight: bold;
+                        line-height: 15px;
+                        // position: absolute;
+                        // left: 15px;
+                        // top: 42px;
+                    }
+                }
+            }
+        }
+
+        .check {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 20px;
+
+            .checkBox {
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: center;
+
+                input {
+                    margin-right: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: bold;
+
+                    span {
+                        color: $link_register;
+                        margin-left: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .remind {
+                width: 100%;
+                height: auto;
+                color: $remind_sp;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+
+        .btnBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 10px 60px 30px;
+
+            button {
+                width: calc(48% - 15px);
+                height: 42px;
+                @include mainBtn;
+
+                &:first-child {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

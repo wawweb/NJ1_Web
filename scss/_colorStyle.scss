@@ -1,0 +1,710 @@
+//大背景色
+$BG: #292929;
+$gameWrapBG: #070707;
+$innerBG: #0d0d0d;
+$secondBG: #1f1f1f;
+$thirdBG: #181818;
+$lightBG: #2e2e2e;
+$darkBG: #000000;
+
+//主border
+$Border: #b5833b;
+$Border_2: #ffc13c;
+
+//主字色
+$mainFont_1: #ffc13c;
+$mainFont_2: #e2e2e2;
+$mainFont_3: #fb770a;
+$time: #d78f3a;
+$disable: #999999;
+
+//提醒字色
+$remind: #35b751;
+$remind_sp: #e11515;
+
+//選擇色
+$choose_Word: #ffc13c;
+$choose_Word2: #8f702d;
+$choose_Active: #ff4719;
+$choose_Border: #ff4719;
+$choose_BG: #101010;
+
+//金錢色
+$money: #ffffff;
+
+//連結色
+$link: #0BD317;
+$link_2: #008599;
+$link_register: #1c39af;
+
+//背景半透明黑
+$filter: #0000009e;
+
+//goTop
+$goTop_BG: #ddb90fe6;
+
+//彈窗色
+$jumpWindow_Header: linear-gradient(90deg,#ffae00,#fec026);
+$jumpWindow_Title: #181818;
+$jumpWindow_BG: #181818;
+$jumpWindow_Border: #ffc13c;
+
+//帳號低中高強度
+$low: #ff0000;
+$middle: #ff4719;
+$high: #5aa960;
+//帳號認證與未認證圖示背景
+$noCheck: #808080;
+$check: #05b900;
+
+//scrollBar樣式
+$scrollBar_thumb: #cccccc;
+$scrollBar_track: #ffffff;
+
+//fakeTable
+$fakeTable_BG: #272727;
+$fakeTable_TitleBorder: #c69c6d;
+$fakeTable_border: #b5833b;
+$fakeTable_Word: #ffc13c;
+
+//lv樣式
+@mixin level {
+    background: linear-gradient(to right,#4ffc21 0%,#09d217 99%);
+    color: #000000;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+//level升級條樣式
+@mixin levelBar {
+    background: #3e3e3e;
+    border-radius: 10px;
+    overflow: hidden;
+
+    li {
+        background: linear-gradient(to right,#4ffc21 0%,#09d217 100%);
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+//header色
+$header_BG_1: #1f1f1f;
+$header_BG_2: #181818;
+$header_Color1: #ff9b1f;
+$header_Color2: #ffc13c;
+$header_Hover: #ff4719;
+$header_Forget: #ff9b1f;
+$header_langBorder: #5a481c;
+$header_langBtn: #f0cc6d;
+//header用按鈕
+@mixin headerBtn_1 {
+    background: linear-gradient(to right,#ff4b33 0%,#d8001f 98%);
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 5px;
+    border-radius: 5px;
+
+    &:hover,&:active,&.active {
+        background: #b9001b;
+    }
+}
+@mixin headerBtn_2 {
+    background: linear-gradient(to right,#a4dd41 0%,#329e36 100%);
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 5px;
+    border-radius: 3px;
+
+    &:hover,&:active,&.active {
+        background: #329e36;
+    }
+}
+@mixin headerMoney {
+    display: block;
+    padding-right: 15px;
+    user-select: none;
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-style: solid;
+        border-width: 6px 4px 0 4px;
+        border-color: #ff0000 transparent;
+    }
+}
+@mixin headerMoneyList {
+    background: #181818;
+    border: solid 1px #ca9d3d;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 20;
+    display: none;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #cccccc;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 10px;
+    }
+
+    &.display {
+        display: block;
+    }
+
+    li {
+        border-bottom: solid 1px #ca9d3d;
+        
+        div {
+
+            p {
+                color: #ffc13c;
+            }
+        }
+    }
+}
+@mixin headerLang {
+    background: #181818;
+    border: none;
+    color: #ffd86e;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 67px 0 15px;
+    appearance: none;
+    cursor: pointer;
+
+    option {
+        background: #181818;
+        color: #ffd86e;
+    }
+}
+@mixin headerMailRemind {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    top: 12px;
+    right: -9px;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background: #ed1c24;
+
+    &.display {
+        display: flex;
+    }
+}
+//headerNav
+$headerNav_Word: #ffc13c;
+$headerNav_Hover: #ff4719;
+//header下拉式選單
+$topGameList_BG: #1f1f1f;
+$topGameList_Title: #ffc13c;
+$topGameList_ArrowBG: #ffc13c;
+$topGameList_fixWord: #ffffff;
+
+//ad
+$ad_Arrow: #ffffff;
+
+//mainWrap
+$quick_BG: #0000009e;
+$quick_Word: #ffffff;
+$quick_Hover: #181818;
+$type_Word: #f9d369;
+
+//marquee
+$marquee_Title: #ffc13c;
+$marquee_Word: #cd9c33;
+$marquee_BG: #272727;
+
+//footer
+$footer_BG1: #2c2c2c;
+$footer_BG2: #191919;
+$footer_Title: #b1b1b1;
+$footer_Hover: #ff4b33;
+$footer_Partner_Title: #fefefe;
+$footer_Partner_Title: #fefefe;
+$footer_iframeBtn: #ffffff;
+
+//gameWrap大title字漸層
+$gameWrap_Linear: #ff4719;
+//slot小窗字底
+$gameWrap_WordBG: #1f1f1f;
+$gameWrap_Word: #ffc13c;
+$gameWrap_Border: #ffc13c;
+
+//register
+$register_Border: #fff0ac;
+$register_Title: #ffdd85;
+$register_TitleBG: linear-gradient(to top,#141414 0%,#272727 100%);
+$register_BG: linear-gradient(to top,#d2ae63 8%,#f1dfa7 53%,#f1dfa7 65%,#fffde1 96%);
+
+//vipCard字樣式
+@mixin cardWord {
+    color: #ffffff;
+    text-shadow: 1px 2px 3px #000000;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+//bankCard樣式
+@mixin bankCard {
+    padding: 15px 17px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &.empty {
+        background: linear-gradient(120deg, #232323 0%, #101010 100%);
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px #ffc13c;
+
+        .text {
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #ffc13c;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    .name {
+        font-size: 22px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 0 2px 3px #000000b4;
+    }
+
+    .branch {
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 0 2px 3px #000000b4;
+    }
+
+    .account {
+
+        span {
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #ffffff;
+            font-weight: bold;
+            text-shadow: 0 2px 3px #000000b4;
+        }
+    }
+
+    .review {
+        color: #000000;
+    }
+}
+
+//mail
+@mixin mailCheckbox {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #101010;
+        border-radius: 50%;
+        border: solid 1px #b5833b;
+    }
+
+    &:checked {
+        
+        &::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #ff4719;
+            border-radius: 50px;
+            z-index: 2;
+        }
+    }
+}
+@mixin mailHover {
+    background: #0d0d0d;
+}
+@mixin read {
+    background: #1f1f1f;
+
+    .title,
+    .msg,
+    .date {
+        color: #ababab;
+    }
+}
+
+//deposit
+$deposit_Title: #ff4719;
+$deposit_postNum: #ffffff;
+@mixin depositBtn {
+    background: #101010;
+    border-radius: 5px;
+    border: solid 1px #a88335;
+    color: #ffc13c;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    &:hover,&:active {
+        background: #ffc13c;
+        color: #101010;
+    }
+
+    &.active {
+        
+        &::before,
+        &::after {
+            display: block;
+        }
+    }
+
+    &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        right: -20px;
+        bottom: -20px;
+        width: 40px;
+        height: 40px;
+        background: #ffc13c;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        right: 4px;
+        bottom: 7px;
+        width: 10px;
+        height: 5px;
+        border-style: solid;
+        border-width: 0px 0px 1px 1px;
+        border-color: #000000;
+        transform: rotate(-45deg);
+    }
+}
+
+//withdrawal
+$withdrawal_limitWord: #e34119;
+
+//help
+$help_remind: #ff4719;
+$help_innerBox_BG: #2a2a2a;
+$help_innerBox_Border: #979797;
+
+
+//button
+
+
+//最常用按鈕
+@mixin mainBtn {
+    background: linear-gradient(to right,#ff4b33 0%,#d8001f 98%);
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+
+    &:hover,&:active,&.active {
+        background: #b9001b;
+    }
+}
+//遊戲快速轉帳彈窗按鈕
+@mixin fastBtn {
+    background: #101010;
+    border: solid 1px #a88335;
+    color: #ffc13c;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    
+    &:hover,&:active,&.active {
+        background: #ffc13c;
+        color: #000000;
+        border-color: transparent;
+    }
+}
+$help_fastBtn_BG: #282828;
+//優惠
+@mixin eventBtn {
+    background: #f5951f;
+    border-radius: 5px;
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #fb770a;
+        color: #ffffff;
+    }
+}
+@mixin eventBtn_2 {
+    background: #30ebff;
+    border-radius: 5px;
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #0a92be;
+        color: #ffffff;
+    }
+}
+//邊框線按鈕異色_站內信
+@mixin mailBtn_1 {
+    background: #101010;
+    border: solid 1px #09d217;
+    color: #09d217;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+
+    &:hover,&:active,&.active {
+        background: #09d217;
+        color: #ffffff;
+    }
+}
+@mixin mailBtn_2 {
+    background: #101010;
+    border: solid 1px #f73b2f;
+    color: #f73b2f;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+
+    &:hover,&:active,&.active {
+        background: #f73b2f;
+        color: #ffffff;
+    }
+}
+//灰漸層+不同hover效果按鈕
+@mixin changeBtn {
+    background: #101010;
+    border: solid 1px #a88335;
+    border-radius: 3px;
+    color: #ffc13c;
+    font-size: 15px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #ffc13c;
+        color: #101010;
+    }
+}
+//內頁左列快速選擇轉存提按鈕
+@mixin quick {
+    background: linear-gradient(to left,#e48b0c 0%,#ffc62a 99%);
+    color: #000000;
+    border-radius: 50%;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+
+    &:hover,&:active,&.active {
+        background: #ff4719;
+        color: #ffffff;
+    }
+}
+//大灰頁籤按鈕
+@mixin grayBtn {
+    background: #272727;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    color: #999999;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(90deg,#ff4b33,#d8001f 98%);
+        color: #ffffff;
+    }
+}
+//黃底大按鈕
+@mixin footerBtn {
+    background: #ffbb17;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s all;
+    text-align: center;
+
+    &:hover,&:active,&.active {
+        background: #ff4719;
+        color: #ffffff;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+//編輯按鈕
+@mixin editBtn {
+    background: #101010;
+    border-radius: 3px;
+    border: solid 1px #a88335;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 15px;
+        height: 15px;
+    }
+}
+//page
+@mixin page {
+    background: transparent;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #ffc13c;
+        color: #000000;
+    }
+}
+
+button:disabled {
+    background: #585858!important;
+    border: none!important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+    cursor: not-allowed;
+}
+
+
+//input
+
+
+//最常用input
+@mixin mainInput {
+    background: #101010;
+    border: solid 1px #ffc13c;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding-left: 15px;
+
+    &::placeholder {
+        color: #999999;
+    }
+}
+//header用input
+@mixin headerInput {
+    background: #eaeaea;
+    border: none;
+    color: #333333;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0 5px 0 12px;
+
+    &::placeholder {
+        color: #555555;
+    }
+}
+
+input:disabled {
+    background: #272727 !important;
+    border: none !important;
+}
+
+
+//select
+
+
+@mixin mainSelect {
+    background: #101010;
+    border: solid 1px #ffc13c;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 15px;
+    border-radius: 3px;
+    background-image: linear-gradient(45deg,transparent 50%,#ffc13c 0),linear-gradient(135deg,#ffc13c 50%,transparent 0);
+    background-position: calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px);
+    background-size: 5px 5px,5px 5px;
+    background-repeat: no-repeat;
+    appearance: none;
+
+    option {
+        background: #101010;
+        color: #ffffff;
+    }
+}
