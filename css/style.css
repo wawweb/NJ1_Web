@@ -4505,7 +4505,7 @@ html body .eventWrap .eventBody .eventList .serialNumber input {
   width: 660px;
   height: 35px;
   font-size: 16px;
-  background: transparent;
+  background: #000000;
   color: #ffc13c;
   border: solid 1px #ffc13c;
   -ms-flex-negative: 0;
@@ -7329,7 +7329,7 @@ html body .innerPage .center .eventWrap .title .serialNumber input {
   width: 550px;
   height: 35px;
   font-size: 16px;
-  background: transparent;
+  background: #000000;
   color: #ffc13c;
   border: solid 1px #ffc13c;
   -ms-flex-negative: 0;
