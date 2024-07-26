@@ -4485,6 +4485,55 @@ html body .eventWrap .eventBody .eventList {
 html body .eventWrap .eventBody .eventList.display {
   display: block;
 }
+html body .eventWrap .eventBody .eventList .serialNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+html body .eventWrap .eventBody .eventList .serialNumber .title {
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #ffc13c;
+  margin: 0 20px 0 15px;
+}
+html body .eventWrap .eventBody .eventList .serialNumber input {
+  width: 660px;
+  height: 35px;
+  font-size: 16px;
+  background: transparent;
+  color: #ffc13c;
+  border: solid 1px #ffc13c;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+html body .eventWrap .eventBody .eventList .serialNumber button {
+  width: 160px;
+  height: 35px;
+  background: -webkit-gradient(linear, left top, right top, from(#ff4b33), to(#d8001f));
+  background: linear-gradient(to right, #ff4b33 0%, #d8001f 100%);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  text-align: center;
+}
+html body .eventWrap .eventBody .eventList .serialNumber button:hover, html body .eventWrap .eventBody .eventList .serialNumber button:active, html body .eventWrap .eventBody .eventList .serialNumber button.active {
+  background: -webkit-gradient(linear, right top, left top, from(#ff4b33), to(#d8001f));
+  background: linear-gradient(to left, #ff4b33 0%, #d8001f 100%);
+  color: #ffffff;
+}
+html body .eventWrap .eventBody .eventList .serialNumber button:hover::before, html body .eventWrap .eventBody .eventList .serialNumber button:active::before, html body .eventWrap .eventBody .eventList .serialNumber button.active::before {
+  display: none;
+}
 html body .eventWrap .eventBody .eventList .eventBox {
   background: #1f1f1f;
   display: -webkit-box;
@@ -7259,6 +7308,71 @@ html body .innerPage .center .eventWrap .title {
   background: #1f1f1f;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+html body .innerPage .center .eventWrap .title.serialGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center .eventWrap .title .serialNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center .eventWrap .title .serialNumber input {
+  width: 550px;
+  height: 35px;
+  font-size: 16px;
+  background: transparent;
+  color: #ffc13c;
+  border: solid 1px #ffc13c;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+html body .innerPage .center .eventWrap .title .serialNumber input::-webkit-input-placeholder {
+  color: #ffc13c;
+}
+html body .innerPage .center .eventWrap .title .serialNumber input::-moz-placeholder {
+  color: #ffc13c;
+}
+html body .innerPage .center .eventWrap .title .serialNumber input:-ms-input-placeholder {
+  color: #ffc13c;
+}
+html body .innerPage .center .eventWrap .title .serialNumber input::-ms-input-placeholder {
+  color: #ffc13c;
+}
+html body .innerPage .center .eventWrap .title .serialNumber input::placeholder {
+  color: #ffc13c;
+}
+html body .innerPage .center .eventWrap .title .serialNumber button {
+  width: 100px;
+  height: 35px;
+  margin-right: 25px;
+  background: -webkit-gradient(linear, left top, right top, from(#ff4b33), to(#d8001f));
+  background: linear-gradient(to right, #ff4b33 0%, #d8001f 100%);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  text-align: center;
+}
+html body .innerPage .center .eventWrap .title .serialNumber button:hover, html body .innerPage .center .eventWrap .title .serialNumber button:active, html body .innerPage .center .eventWrap .title .serialNumber button.active {
+  background: -webkit-gradient(linear, right top, left top, from(#ff4b33), to(#d8001f));
+  background: linear-gradient(to left, #ff4b33 0%, #d8001f 100%);
+  color: #ffffff;
+}
+html body .innerPage .center .eventWrap .title .serialNumber button:hover::before, html body .innerPage .center .eventWrap .title .serialNumber button:active::before, html body .innerPage .center .eventWrap .title .serialNumber button.active::before {
+  display: none;
 }
 html body .innerPage .center .eventWrap .title h1 {
   width: 100%;

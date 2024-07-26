@@ -115,6 +115,41 @@
             &.display {
                 display: block;
             }
+            
+            .serialNumber {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+
+                .title {
+                    font-size: 16px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    color: $mainFont_1;
+                    margin: 0 20px 0 15px;
+                }
+
+                input {
+                    width: 660px;
+                    height: 35px;
+                    font-size: 16px;
+                    background: transparent;
+                    color: $mainFont_1;
+                    border: solid 1px $Border_2;
+                    flex-shrink: 0;
+                    margin-right: 20px;
+                    padding: 0 10px;
+
+                }
+
+                button {
+                    width: 160px;
+                    height: 35px;
+
+                    @include serialBtn;
+                }
+
+            }
 
             .eventBox {
                 background: $secondBG;

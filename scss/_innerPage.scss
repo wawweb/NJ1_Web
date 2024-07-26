@@ -2249,6 +2249,41 @@
                 margin-bottom: 20px;
                 border-radius: 5px;
 
+                &.serialGroup {
+                    display: flex;
+                    align-items: center;
+                    
+                }
+
+                .serialNumber {
+                    display: flex;
+                    align-items: center;
+    
+                    input {
+                        width: 550px;
+                        height: 35px;
+                        font-size: 16px;
+                        background: transparent;
+                        color: $mainFont_1;
+                        border: solid 1px $Border_2;
+                        flex-shrink: 0;
+                        margin-right: 10px;
+                        padding: 0 10px;
+                        
+                        &::placeholder {
+                            color: $mainFont_1;
+                        }
+                    }
+    
+                    button {
+                        width: 100px;
+                        height: 35px;
+                        margin-right: 25px;
+                        @include serialBtn;
+                    }
+    
+                }
+
                 h1 {
                     width: 100%;
                     box-sizing: border-box;
