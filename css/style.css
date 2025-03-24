@@ -527,6 +527,10 @@ footer .partner .evo {
   background-size: 100%;
 }
 
+.depositWrap .list .depositIC.buybe {
+  background: url("../images/icon/deposit_buybe.png") no-repeat center/contain;
+}
+
 .depositWrap .list .depositIC {
   background: url("../images/icon/deposit_ic.png") no-repeat;
   background-size: 500%;
@@ -2542,8 +2546,7 @@ html body footer .footerList .center ul li button::before {
   width: 18px;
   height: 18px;
   background: #ff4b33;
-  -webkit-clip-path: polygon(50% 0, 86% 50%, 50% 100%, 14% 50%);
-          clip-path: polygon(50% 0, 86% 50%, 50% 100%, 14% 50%);
+  clip-path: polygon(50% 0, 86% 50%, 50% 100%, 14% 50%);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   pointer-events: none;
@@ -7431,7 +7434,8 @@ html body .innerPage .center .eventWrap .eventMiddle .tabs li:hover, html body .
   background: linear-gradient(90deg, #ff4b33, #d8001f 98%);
   color: #ffffff;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl {
   display: none;
   width: 100%;
   min-height: 430px;
@@ -7441,24 +7445,29 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox, html body .inner
   background: #1f1f1f;
   border-radius: 5px;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox.display, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl.display {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox.display,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl.display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul {
   width: 100%;
   height: auto;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li {
   width: 100%;
   margin-bottom: 15px;
   border: solid 1px #b5833b;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li:last-child, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li:last-child {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li:last-child,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li:last-child {
   margin: 0;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header {
   width: 100%;
   height: auto;
   border-bottom: solid 2px #c69c6d;
@@ -7475,12 +7484,14 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header, ht
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p {
   margin-right: 18px;
   color: #ffc13c;
   font-size: 16px;
@@ -7493,23 +7504,29 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div
       -ms-flex-align: center;
           align-items: center;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p.first, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p.first {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p.first,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p.first {
   color: #d78f3a;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p.day-tips, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p.day-tips {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p.day-tips,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p.day-tips {
   color: #e2e2e2;
   font-size: 14px;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p span {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p span {
   color: #ffc13c;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span.now, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p span.now {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span.now,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p span.now {
   color: #35b751;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span.split, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p span.split {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span.split,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p span.split {
   margin: 0 5px;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox {
   width: auto;
   height: auto;
   display: -webkit-box;
@@ -7520,7 +7537,8 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div
       -ms-flex-direction: column;
           flex-direction: column;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button {
   width: 140px;
   height: 31px;
   background: #f5951f;
@@ -7530,14 +7548,19 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div
   font-size: 14px;
   font-weight: bold;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button:hover, html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button:active, html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.active, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button:hover, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button:active, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.active {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button:hover, html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button:active, html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.active,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button:hover,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button:active,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.active {
   background: #fb770a;
   color: #ffffff;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.apply, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.apply {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.apply,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.apply {
   margin-bottom: 5px;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.check, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.check {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.check,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.check {
   background: #30ebff;
   border-radius: 5px;
   border: none;
@@ -7545,25 +7568,31 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div
   font-size: 14px;
   font-weight: bold;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.check:hover, html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.check:active, html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.check.active, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.check:hover, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.check:active, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.check.active {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.check:hover, html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.check:active, html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div .btnBox button.check.active,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.check:hover,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.check:active,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div .btnBox button.check.active {
   background: #0a92be;
   color: #ffffff;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content {
   width: 100%;
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 24px;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 0 1fr 0 1fr;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 35px 0;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7571,25 +7600,30 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul
   border: none;
   margin: 0;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li.sp, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li.sp {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li.sp,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li.sp {
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-column-span: 3;
   grid-column-end: 4;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li p, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li p {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li p,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li p {
   font-size: 14px;
   font-weight: bold;
   color: #ffc13c;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li p.smallTitle, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li p.smallTitle {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li p.smallTitle,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li p.smallTitle {
   margin-right: 25px;
   color: #fb770a;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li p.sp, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li p.sp {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li p.sp,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li p.sp {
   color: #35b751;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table {
   width: 560px;
   height: auto;
   border-radius: 5px;
@@ -7597,18 +7631,22 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul
           box-shadow: 0 0 0 1px #b5833b;
   background: #181818;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr:last-child td, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr:last-child td {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr:last-child td,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr:last-child td {
   border: none;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr th, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr th {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr th,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr th {
   height: 30px;
   vertical-align: middle;
   border-bottom: solid 2px #b5833b;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr th:last-child p, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr th:last-child p {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr th:last-child p,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr th:last-child p {
   border: none;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr th p, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr th p {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr th p,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr th p {
   width: 100%;
   text-align: center;
   color: #ffc13c;
@@ -7619,18 +7657,22 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul
   white-space: nowrap;
   border-right: solid 1px #b5833b;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr td, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr td {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr td,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr td {
   height: 50px;
   vertical-align: middle;
   border-bottom: solid 1px #b5833b;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr td:nth-of-type(2) p, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr td:nth-of-type(2) p {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr td:nth-of-type(2) p,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr td:nth-of-type(2) p {
   color: #35b751;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr td:last-child p, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr td:last-child p {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr td:last-child p,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr td:last-child p {
   border: none;
 }
-html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr td p, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr td p {
+html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li table tr td p,
+html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .content ul li table tr td p {
   width: 100%;
   text-align: center;
   color: #fb770a;
@@ -9323,6 +9365,27 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable li.r
           transform: translate(-50%, -50%);
   width: 15px;
   height: 15px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable.buybe {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable.buybe a {
+  background: url("../images/icon/buybeBtn.png") no-repeat center/contain;
+  width: 300px;
+  height: 125px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable.buybe.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable.buybe.display ~ .check {
+  display: none;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .check {
   width: 257px;

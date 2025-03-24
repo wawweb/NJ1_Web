@@ -657,6 +657,9 @@ $(function(){
     $(".depositWrap .list li:eq(4)").click(function(){
         $(".depositWrap .bottom .venus").addClass("display");
     })
+    $(".depositWrap .list li:eq(5)").click(function(){
+        $(".depositWrap .bottom .buybe").addClass("display");
+    })
 
     $(".depositWrap .bottom .check").click(function(){
         $(".depositWrap .bottom .title,.depositWrap .bottom .fakeTable").removeClass("display");
