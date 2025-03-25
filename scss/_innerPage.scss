@@ -3640,7 +3640,7 @@
 						// }
 
 						.box {
-							width: 95%;
+							width: 100%;
 							height: auto;
 							overflow: hidden;
 
@@ -3649,10 +3649,10 @@
 								height: auto;
 								display: flex;
 
-								li {
+								li { 
 									width: 125px;
 									height: auto;
-									margin-right: 15px;
+									margin-right: 10px;
 									@include depositBtn;
 
 									i {

@@ -9002,7 +9002,7 @@ html body .innerPage .center .depositWrap .depositMiddle .top .list {
   padding: 20px 30px;
 }
 html body .innerPage .center .depositWrap .depositMiddle .top .list .box {
-  width: 95%;
+  width: 100%;
   height: auto;
   overflow: hidden;
 }
@@ -9016,7 +9016,7 @@ html body .innerPage .center .depositWrap .depositMiddle .top .list .box ul {
 html body .innerPage .center .depositWrap .depositMiddle .top .list .box ul li {
   width: 125px;
   height: auto;
-  margin-right: 15px;
+  margin-right: 10px;
   background: #101010;
   border-radius: 5px;
   border: solid 1px #a88335;
