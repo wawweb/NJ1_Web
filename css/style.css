@@ -54,6 +54,10 @@ header .transferInfo .money i {
   background-size: contain;
 }
 
+footer .license {
+  background: url("../images/icon/license.png") no-repeat center/contain !important;
+}
+
 footer .twitter {
   background: url("../images/icon/svg/twitter.svg") no-repeat !important;
   background-size: contain;
@@ -2462,6 +2466,16 @@ html body footer .footerList .center ul li .title {
   margin-bottom: 30px;
   text-decoration: underline;
 }
+html body footer .footerList .center ul li .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 10px;
+  gap: 10px;
+}
 html body footer .footerList .center ul li button {
   width: 100%;
   height: auto;
@@ -2528,11 +2542,12 @@ html body footer .footerList .center ul li button.iframe-box img {
 html body footer .footerList .center ul li button.iframe-box:hover, html body footer .footerList .center ul li button.iframe-box:active, html body footer .footerList .center ul li button.iframe-box.active {
   background: #ffffff;
 }
-html body footer .footerList .center ul li button.twitter {
+html body footer .footerList .center ul li button.twitter, html body footer .footerList .center ul li button.license {
   width: 48px;
   height: 48px;
+  margin: 0;
 }
-html body footer .footerList .center ul li button.twitter:hover::before, html body footer .footerList .center ul li button.twitter:active::before, html body footer .footerList .center ul li button.twitter.active::before {
+html body footer .footerList .center ul li button.twitter:hover::before, html body footer .footerList .center ul li button.twitter:active::before, html body footer .footerList .center ul li button.twitter.active::before, html body footer .footerList .center ul li button.license:hover::before, html body footer .footerList .center ul li button.license:active::before, html body footer .footerList .center ul li button.license.active::before {
   display: none;
 }
 html body footer .footerList .center ul li button::before {

@@ -41,6 +41,9 @@ header .transferInfo .money i {
 }
 
 //footer
+footer .license {
+    background: url('../images/icon/license.png') no-repeat center/contain !important;
+}
 footer .twitter {
     background: url('../images/icon/svg/twitter.svg') no-repeat !important;
     background-size: contain;
