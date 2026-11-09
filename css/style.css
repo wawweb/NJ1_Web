@@ -535,6 +535,10 @@ footer .partner .evo {
   background: url("../images/icon/deposit_buybe.png") no-repeat center/contain;
 }
 
+.depositWrap .list .depositIC.pay-easy {
+  background: url("../images/icon/deposit_pay-easy.png") no-repeat center/contain;
+}
+
 .depositWrap .list .depositIC {
   background: url("../images/icon/deposit_ic.png") no-repeat;
   background-size: 500%;
@@ -1228,10 +1232,12 @@ html body header .top .user li:not(.platform) .loginForm button {
   font-weight: bold;
   padding: 0 5px;
   border-radius: 5px;
-  margin-right: 10px;
 }
 html body header .top .user li:not(.platform) .loginForm button:hover, html body header .top .user li:not(.platform) .loginForm button:active, html body header .top .user li:not(.platform) .loginForm button.active {
   background: #b9001b;
+}
+html body header .top .user li:not(.platform) .loginForm button {
+  margin-right: 10px;
 }
 html body header .top .user li:not(.platform) .loginForm button.signupBtn {
   background: -webkit-gradient(linear, left top, right top, from(#a4dd41), to(#329e36));
@@ -2501,7 +2507,6 @@ html body footer .footerList .center ul li button.serviceBtn {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   text-align: center;
-  border-radius: 30px;
 }
 html body footer .footerList .center ul li button.serviceBtn:hover, html body footer .footerList .center ul li button.serviceBtn:active, html body footer .footerList .center ul li button.serviceBtn.active {
   background: #ff4719;
@@ -2509,6 +2514,9 @@ html body footer .footerList .center ul li button.serviceBtn:hover, html body fo
 }
 html body footer .footerList .center ul li button.serviceBtn:hover::before, html body footer .footerList .center ul li button.serviceBtn:active::before, html body footer .footerList .center ul li button.serviceBtn.active::before {
   display: none;
+}
+html body footer .footerList .center ul li button.serviceBtn {
+  border-radius: 30px;
 }
 html body footer .footerList .center ul li button.iframe-box {
   width: 240px;
@@ -2521,11 +2529,6 @@ html body footer .footerList .center ul li button.iframe-box {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #ffffff;
-  border-radius: 30px;
 }
 html body footer .footerList .center ul li button.iframe-box:hover, html body footer .footerList .center ul li button.iframe-box:active, html body footer .footerList .center ul li button.iframe-box.active {
   background: #ff4719;
@@ -2533,6 +2536,13 @@ html body footer .footerList .center ul li button.iframe-box:hover, html body fo
 }
 html body footer .footerList .center ul li button.iframe-box:hover::before, html body footer .footerList .center ul li button.iframe-box:active::before, html body footer .footerList .center ul li button.iframe-box.active::before {
   display: none;
+}
+html body footer .footerList .center ul li button.iframe-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff;
+  border-radius: 30px;
 }
 html body footer .footerList .center ul li button.iframe-box img {
   width: 121px;
@@ -2636,13 +2646,15 @@ html body .agentP button {
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 5px;
+}
+html body .agentP button:hover, html body .agentP button:active, html body .agentP button.active {
+  background: #b9001b;
+}
+html body .agentP button {
   border-radius: 34px;
   font-size: 25px;
   font-weight: bolder;
   margin: 73px auto;
-}
-html body .agentP button:hover, html body .agentP button:active, html body .agentP button.active {
-  background: #b9001b;
 }
 html body .agentP .bottom {
   width: 100%;
@@ -2729,7 +2741,6 @@ html body .filter .jumpWindow.forgetPassword form input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 15px;
-  margin-bottom: 16px;
 }
 html body .filter .jumpWindow.forgetPassword form input::-webkit-input-placeholder {
   color: #999999;
@@ -2746,6 +2757,9 @@ html body .filter .jumpWindow.forgetPassword form input::-ms-input-placeholder {
 html body .filter .jumpWindow.forgetPassword form input::placeholder {
   color: #999999;
 }
+html body .filter .jumpWindow.forgetPassword form input {
+  margin-bottom: 16px;
+}
 html body .filter .jumpWindow.forgetPassword form button {
   width: 532px;
   height: 42px;
@@ -2757,10 +2771,12 @@ html body .filter .jumpWindow.forgetPassword form button {
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 5px;
-  margin-bottom: 24px;
 }
 html body .filter .jumpWindow.forgetPassword form button:hover, html body .filter .jumpWindow.forgetPassword form button:active, html body .filter .jumpWindow.forgetPassword form button.active {
   background: #b9001b;
+}
+html body .filter .jumpWindow.forgetPassword form button {
+  margin-bottom: 24px;
 }
 html body .filter .jumpWindow.forgetPassword form p {
   color: #35b751;
@@ -2806,13 +2822,15 @@ html body .filter .jumpWindow.news .nav li {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
-  margin-right: 7px;
-  padding: 5px 20px;
 }
 html body .filter .jumpWindow.news .nav li:hover, html body .filter .jumpWindow.news .nav li:active, html body .filter .jumpWindow.news .nav li.active {
   background: -webkit-gradient(linear, left top, right top, from(#ff4b33), color-stop(98%, #d8001f));
   background: linear-gradient(90deg, #ff4b33, #d8001f 98%);
   color: #ffffff;
+}
+html body .filter .jumpWindow.news .nav li {
+  margin-right: 7px;
+  padding: 5px 20px;
 }
 html body .filter .jumpWindow.news .content {
   display: none;
@@ -3014,8 +3032,6 @@ html body .filter .jumpWindow.phoneWindow form .content li button {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   text-align: center;
-  margin-top: 8px;
-  padding: 5px 10px;
 }
 html body .filter .jumpWindow.phoneWindow form .content li button:hover, html body .filter .jumpWindow.phoneWindow form .content li button:active, html body .filter .jumpWindow.phoneWindow form .content li button.active {
   background: #ff4719;
@@ -3023,6 +3039,10 @@ html body .filter .jumpWindow.phoneWindow form .content li button:hover, html bo
 }
 html body .filter .jumpWindow.phoneWindow form .content li button:hover::before, html body .filter .jumpWindow.phoneWindow form .content li button:active::before, html body .filter .jumpWindow.phoneWindow form .content li button.active::before {
   display: none;
+}
+html body .filter .jumpWindow.phoneWindow form .content li button {
+  margin-top: 8px;
+  padding: 5px 10px;
 }
 html body .filter .jumpWindow.phoneWindow form .content input {
   width: 345px;
@@ -3299,12 +3319,14 @@ html body .filter .jumpWindow.betWindow form .row .btnBox button {
   border-radius: 3px;
   font-size: 14px;
   font-weight: bold;
-  margin: 0 2px 6px 0;
 }
 html body .filter .jumpWindow.betWindow form .row .btnBox button:hover, html body .filter .jumpWindow.betWindow form .row .btnBox button:active, html body .filter .jumpWindow.betWindow form .row .btnBox button.active {
   background: #ffc13c;
   color: #000000;
   border-color: transparent;
+}
+html body .filter .jumpWindow.betWindow form .row .btnBox button {
+  margin: 0 2px 6px 0;
 }
 html body .filter .jumpWindow.betWindow form .row .btnBox button:nth-of-type(3n) {
   margin-right: 0;
@@ -3320,10 +3342,12 @@ html body .filter .jumpWindow.betWindow form .row .check {
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 5px;
-  margin-bottom: 20px;
 }
 html body .filter .jumpWindow.betWindow form .row .check:hover, html body .filter .jumpWindow.betWindow form .row .check:active, html body .filter .jumpWindow.betWindow form .row .check.active {
   background: #b9001b;
+}
+html body .filter .jumpWindow.betWindow form .row .check {
+  margin-bottom: 20px;
 }
 html body .filter .jumpWindow.betWindow .enterGame {
   width: auto;
@@ -3487,11 +3511,13 @@ html body .filter .jumpWindow.pointWindow .content .pageBox .page button {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  margin-right: 8px;
 }
 html body .filter .jumpWindow.pointWindow .content .pageBox .page button:hover, html body .filter .jumpWindow.pointWindow .content .pageBox .page button:active, html body .filter .jumpWindow.pointWindow .content .pageBox .page button.active {
   background: #ffc13c;
   color: #000000;
+}
+html body .filter .jumpWindow.pointWindow .content .pageBox .page button {
+  margin-right: 8px;
 }
 html body .filter .jumpWindow.pointWindow .content .pageBox .page button:nth-of-type(1) {
   margin-left: 8px;
@@ -3802,6 +3828,11 @@ html body .filter .jumpWindow.agRegist .content form .block .apply {
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 5px;
+}
+html body .filter .jumpWindow.agRegist .content form .block .apply:hover, html body .filter .jumpWindow.agRegist .content form .block .apply:active, html body .filter .jumpWindow.agRegist .content form .block .apply.active {
+  background: #b9001b;
+}
+html body .filter .jumpWindow.agRegist .content form .block .apply {
   width: 100%;
   height: auto;
   font-size: 18px;
@@ -3812,9 +3843,6 @@ html body .filter .jumpWindow.agRegist .content form .block .apply {
           box-sizing: border-box;
   margin: 20px;
   cursor: pointer;
-}
-html body .filter .jumpWindow.agRegist .content form .block .apply:hover, html body .filter .jumpWindow.agRegist .content form .block .apply:active, html body .filter .jumpWindow.agRegist .content form .block .apply.active {
-  background: #b9001b;
 }
 html body .filter .jumpWindow.agApply {
   width: 360px;
@@ -4201,7 +4229,6 @@ html body .gameWrap .slotCenter .slotBody .nav .search input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 15px;
-  padding-left: 40px;
 }
 html body .gameWrap .slotCenter .slotBody .nav .search input::-webkit-input-placeholder {
   color: #999999;
@@ -4217,6 +4244,9 @@ html body .gameWrap .slotCenter .slotBody .nav .search input::-ms-input-placehol
 }
 html body .gameWrap .slotCenter .slotBody .nav .search input::placeholder {
   color: #999999;
+}
+html body .gameWrap .slotCenter .slotBody .nav .search input {
+  padding-left: 40px;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox {
   padding: 24px 48px 40px;
@@ -4261,12 +4291,14 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfNa
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 5px;
-  width: 137px;
-  height: 40px;
-  font-size: 18px;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all:hover, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all:active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all.active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back:hover, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back:active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back.active {
   background: #b9001b;
+}
+html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back {
+  width: 137px;
+  height: 40px;
+  font-size: 18px;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all i, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back i {
   display: inline-block;
@@ -4998,17 +5030,19 @@ html body .innerPage .center .innerSide .innerNav li .remind {
   border: 1px solid #ffffff;
   color: #ffffff;
   background: #ed1c24;
+}
+html body .innerPage .center .innerSide .innerNav li .remind.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center .innerSide .innerNav li .remind {
   position: static;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
   border: none;
-}
-html body .innerPage .center .innerSide .innerNav li .remind.display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 html body .innerPage .center .memberWrap {
   width: 880px;
@@ -5259,9 +5293,6 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
   border-radius: 3px;
   border: solid 1px #a88335;
   position: relative;
-  margin-left: 8px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .box button::before, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right form ul li .box button::before {
   content: "";
@@ -5272,6 +5303,11 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
           transform: translate(-50%, -50%);
   width: 15px;
   height: 15px;
+}
+html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .box button, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right form ul li .box button {
+  margin-left: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .check, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right form ul li .check {
   width: 375px;
@@ -5363,9 +5399,6 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li
   border-radius: 3px;
   border: solid 1px #a88335;
   position: relative;
-  margin-left: 8px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li .box button::before {
   content: "";
@@ -5376,6 +5409,11 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li
           transform: translate(-50%, -50%);
   width: 15px;
   height: 15px;
+}
+html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li .box button {
+  margin-left: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .innerPage .center .memberWrap .bottom .platformWrap {
   display: none;
@@ -5625,13 +5663,15 @@ html body .innerPage .center .vipWrap .top .nextBox .nextBar .bar {
   background: #3e3e3e;
   border-radius: 10px;
   overflow: hidden;
-  margin: 0 10px;
 }
 html body .innerPage .center .vipWrap .top .nextBox .nextBar .bar li {
   background: -webkit-gradient(linear, left top, right top, from(#4ffc21), to(#09d217));
   background: linear-gradient(to right, #4ffc21 0%, #09d217 100%);
   height: 100%;
   border-radius: 10px;
+}
+html body .innerPage .center .vipWrap .top .nextBox .nextBar .bar {
+  margin: 0 10px;
 }
 html body .innerPage .center .vipWrap .top .nextBox .nextBar .bar li {
   width: 20%;
@@ -6018,8 +6058,6 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .total .tot
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   text-align: center;
-  padding: 0 10px;
-  font-size: 12px;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button:hover, html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button:active, html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button.active {
   background: #ff4719;
@@ -6027,6 +6065,10 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .total .tot
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button:hover::before, html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button:active::before, html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button.active::before {
   display: none;
+}
+html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button {
+  padding: 0 10px;
+  font-size: 12px;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total .amount {
   width: 100%;
@@ -6540,11 +6582,13 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 5px;
-  display: block;
-  margin: 0 auto;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form ul li .check:hover, html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form ul li .check:active, html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form ul li .check.active {
   background: #b9001b;
+}
+html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form ul li .check {
+  display: block;
+  margin: 0 auto;
 }
 html body .innerPage .center .rightSide {
   width: 245px;
@@ -6922,6 +6966,13 @@ html body .innerPage .center .mailWrap .top div a {
   border-radius: 3px;
   font-size: 14px;
   font-weight: bold;
+}
+html body .innerPage .center .mailWrap .top div a:hover, html body .innerPage .center .mailWrap .top div a:active, html body .innerPage .center .mailWrap .top div a.active {
+  background: #ffc13c;
+  color: #000000;
+  border-color: transparent;
+}
+html body .innerPage .center .mailWrap .top div a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6932,11 +6983,6 @@ html body .innerPage .center .mailWrap .top div a {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-}
-html body .innerPage .center .mailWrap .top div a:hover, html body .innerPage .center .mailWrap .top div a:active, html body .innerPage .center .mailWrap .top div a.active {
-  background: #ffc13c;
-  color: #000000;
-  border-color: transparent;
 }
 html body .innerPage .center .mailWrap .bottom {
   display: none;
@@ -7185,7 +7231,6 @@ html body .innerPage .center .mailWrap .bottom .list ul li:hover, html body .inn
 html body .innerPage .center .mailWrap .bottom .list ul li input {
   display: none;
   position: relative;
-  margin: 0 19px 0 24px;
 }
 html body .innerPage .center .mailWrap .bottom .list ul li input::before {
   content: "";
@@ -7212,6 +7257,9 @@ html body .innerPage .center .mailWrap .bottom .list ul li input:checked::after 
   background: #ff4719;
   border-radius: 50px;
   z-index: 2;
+}
+html body .innerPage .center .mailWrap .bottom .list ul li input {
+  margin: 0 19px 0 24px;
 }
 html body .innerPage .center .mailWrap .bottom .list ul li .title {
   width: 28%;
@@ -7308,11 +7356,13 @@ html body .innerPage .center .mailWrap .bottom .list .pageBox .page button {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  margin-right: 8px;
 }
 html body .innerPage .center .mailWrap .bottom .list .pageBox .page button:hover, html body .innerPage .center .mailWrap .bottom .list .pageBox .page button:active, html body .innerPage .center .mailWrap .bottom .list .pageBox .page button.active {
   background: #ffc13c;
   color: #000000;
+}
+html body .innerPage .center .mailWrap .bottom .list .pageBox .page button {
+  margin-right: 8px;
 }
 html body .innerPage .center .mailWrap .bottom .list .pageBox .page button:nth-of-type(1) {
   margin-left: 8px;
@@ -7969,11 +8019,13 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .t
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  margin-right: 8px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap .pageBox .page button:hover, html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap .pageBox .page button:active, html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap .pageBox .page button.active {
   background: #ffc13c;
   color: #000000;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap .pageBox .page button {
+  margin-right: 8px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap .pageBox .page button:nth-of-type(1) {
   margin-left: 8px;
@@ -8376,11 +8428,13 @@ html body .innerPage .center .dealWrap .bottom .dealBox .pageBox .page button {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  margin-right: 8px;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .pageBox .page button:hover, html body .innerPage .center .dealWrap .bottom .dealBox .pageBox .page button:active, html body .innerPage .center .dealWrap .bottom .dealBox .pageBox .page button.active {
   background: #ffc13c;
   color: #000000;
+}
+html body .innerPage .center .dealWrap .bottom .dealBox .pageBox .page button {
+  margin-right: 8px;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .pageBox .page button:nth-of-type(1) {
   margin-left: 8px;
@@ -8471,7 +8525,6 @@ html body .innerPage .center .dealWrap .bottom .waterBox table tr td p button {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   text-align: center;
-  font-size: 14px;
 }
 html body .innerPage .center .dealWrap .bottom .waterBox table tr td p button:hover, html body .innerPage .center .dealWrap .bottom .waterBox table tr td p button:active, html body .innerPage .center .dealWrap .bottom .waterBox table tr td p button.active {
   background: #ff4719;
@@ -8479,6 +8532,9 @@ html body .innerPage .center .dealWrap .bottom .waterBox table tr td p button:ho
 }
 html body .innerPage .center .dealWrap .bottom .waterBox table tr td p button:hover::before, html body .innerPage .center .dealWrap .bottom .waterBox table tr td p button:active::before, html body .innerPage .center .dealWrap .bottom .waterBox table tr td p button.active::before {
   display: none;
+}
+html body .innerPage .center .dealWrap .bottom .waterBox table tr td p button {
+  font-size: 14px;
 }
 html body .innerPage .center .dealWrap .bottom .waterBox .pageBox {
   position: absolute;
@@ -8527,11 +8583,13 @@ html body .innerPage .center .dealWrap .bottom .waterBox .pageBox .page button {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  margin-right: 8px;
 }
 html body .innerPage .center .dealWrap .bottom .waterBox .pageBox .page button:hover, html body .innerPage .center .dealWrap .bottom .waterBox .pageBox .page button:active, html body .innerPage .center .dealWrap .bottom .waterBox .pageBox .page button.active {
   background: #ffc13c;
   color: #000000;
+}
+html body .innerPage .center .dealWrap .bottom .waterBox .pageBox .page button {
+  margin-right: 8px;
 }
 html body .innerPage .center .dealWrap .bottom .waterBox .pageBox .page button:nth-of-type(1) {
   margin-left: 8px;
@@ -8909,11 +8967,13 @@ html body .innerPage .center .betWrap .bottom .fakeTable ul li .pageBox .page bu
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  margin-right: 8px;
 }
 html body .innerPage .center .betWrap .bottom .fakeTable ul li .pageBox .page button:hover, html body .innerPage .center .betWrap .bottom .fakeTable ul li .pageBox .page button:active, html body .innerPage .center .betWrap .bottom .fakeTable ul li .pageBox .page button.active {
   background: #ffc13c;
   color: #000000;
+}
+html body .innerPage .center .betWrap .bottom .fakeTable ul li .pageBox .page button {
+  margin-right: 8px;
 }
 html body .innerPage .center .betWrap .bottom .fakeTable ul li .pageBox .page button:nth-of-type(1) {
   margin-left: 8px;
@@ -9292,9 +9352,6 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable li.l
   border-radius: 3px;
   border: solid 1px #a88335;
   position: relative;
-  margin-left: 8px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable li.left form ul li .box button::before {
   content: "";
@@ -9305,6 +9362,11 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable li.l
           transform: translate(-50%, -50%);
   width: 15px;
   height: 15px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable li.left form ul li .box button {
+  margin-left: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable li.right {
   display: -webkit-box;
@@ -9367,9 +9429,6 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable li.r
   border-radius: 3px;
   border: solid 1px #a88335;
   position: relative;
-  margin-left: 8px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable li.right ul li button::before {
   content: "";
@@ -9380,6 +9439,11 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable li.r
           transform: translate(-50%, -50%);
   width: 15px;
   height: 15px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable li.right ul li button {
+  margin-left: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .fakeTable.buybe {
   -webkit-box-pack: center;
@@ -9413,11 +9477,13 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .check {
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 5px;
-  display: block;
-  margin: 0 auto;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .check:hover, html body .innerPage .center .depositWrap .depositMiddle .bottom .check:active, html body .innerPage .center .depositWrap .depositMiddle .bottom .check.active {
   background: #b9001b;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom .check {
+  display: block;
+  margin: 0 auto;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .remindBox {
   margin-top: 20px;
@@ -9540,11 +9606,13 @@ html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet
   color: #000000;
   font-size: 14px;
   font-weight: bold;
-  padding: 3px 5px;
 }
 html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button:hover, html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button:active, html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button.active {
   background: #fb770a;
   color: #ffffff;
+}
+html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button {
+  padding: 3px 5px;
 }
 html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .amount {
   width: 100%;
@@ -9837,12 +9905,14 @@ html body .innerPage .center .transferWrap .transferMiddle form .moneyBox .input
   border-radius: 3px;
   font-size: 14px;
   font-weight: bold;
-  margin: 0 5px 5px 0;
 }
 html body .innerPage .center .transferWrap .transferMiddle form .moneyBox .inputBox .btnBox button:hover, html body .innerPage .center .transferWrap .transferMiddle form .moneyBox .inputBox .btnBox button:active, html body .innerPage .center .transferWrap .transferMiddle form .moneyBox .inputBox .btnBox button.active {
   background: #ffc13c;
   color: #000000;
   border-color: transparent;
+}
+html body .innerPage .center .transferWrap .transferMiddle form .moneyBox .inputBox .btnBox button {
+  margin: 0 5px 5px 0;
 }
 html body .innerPage .center .transferWrap .transferMiddle form .moneyBox .inputBox .btnBox button:nth-of-type(3n) {
   margin-right: 0;
@@ -9858,10 +9928,12 @@ html body .innerPage .center .transferWrap .transferMiddle form .moneyBox .input
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 5px;
-  margin: 15px 0 0 0;
 }
 html body .innerPage .center .transferWrap .transferMiddle form .moneyBox .inputBox .btnBox button.check:hover, html body .innerPage .center .transferWrap .transferMiddle form .moneyBox .inputBox .btnBox button.check:active, html body .innerPage .center .transferWrap .transferMiddle form .moneyBox .inputBox .btnBox button.check.active {
   background: #b9001b;
+}
+html body .innerPage .center .transferWrap .transferMiddle form .moneyBox .inputBox .btnBox button.check {
+  margin: 15px 0 0 0;
 }
 html body .innerPage .center .withdrawalWrap {
   display: -webkit-box;
@@ -9971,11 +10043,13 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .walletBox .
   color: #000000;
   font-size: 14px;
   font-weight: bold;
-  padding: 3px 5px;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .walletBox .smallBox .smallTitle p button:hover, html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .walletBox .smallBox .smallTitle p button:active, html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .walletBox .smallBox .smallTitle p button.active {
   background: #fb770a;
   color: #ffffff;
+}
+html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .walletBox .smallBox .smallTitle p button {
+  padding: 3px 5px;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .walletBox .smallBox .amount {
   padding: 21px 0 0 10px;
@@ -10422,9 +10496,6 @@ html body .innerPage .center .inviteWrap .top .content .fakeTable li.left ul li 
   border-radius: 3px;
   border: solid 1px #a88335;
   position: relative;
-  margin-left: 8px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 html body .innerPage .center .inviteWrap .top .content .fakeTable li.left ul li .box button::before, html body .innerPage .center .inviteWrap .top .content .fakeTable li.right ul li .box button::before {
   content: "";
@@ -10435,6 +10506,11 @@ html body .innerPage .center .inviteWrap .top .content .fakeTable li.left ul li 
           transform: translate(-50%, -50%);
   width: 15px;
   height: 15px;
+}
+html body .innerPage .center .inviteWrap .top .content .fakeTable li.left ul li .box button, html body .innerPage .center .inviteWrap .top .content .fakeTable li.right ul li .box button {
+  margin-left: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .innerPage .center .inviteWrap .top .content .fakeTable li.left ul li .check, html body .innerPage .center .inviteWrap .top .content .fakeTable li.right ul li .check {
   width: 375px;
@@ -10911,11 +10987,13 @@ html body .innerPage .center .pointWrap .bottom .content .fakeTable ul li .pageB
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  margin-right: 8px;
 }
 html body .innerPage .center .pointWrap .bottom .content .fakeTable ul li .pageBox .page button:hover, html body .innerPage .center .pointWrap .bottom .content .fakeTable ul li .pageBox .page button:active, html body .innerPage .center .pointWrap .bottom .content .fakeTable ul li .pageBox .page button.active {
   background: #ffc13c;
   color: #000000;
+}
+html body .innerPage .center .pointWrap .bottom .content .fakeTable ul li .pageBox .page button {
+  margin-right: 8px;
 }
 html body .innerPage .center .pointWrap .bottom .content .fakeTable ul li .pageBox .page button:nth-of-type(1) {
   margin-left: 8px;
@@ -11056,11 +11134,13 @@ html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  margin-right: 8px;
 }
 html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page button:hover, html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page button:active, html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page button.active {
   background: #ffc13c;
   color: #000000;
+}
+html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page button {
+  margin-right: 8px;
 }
 html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page button:nth-of-type(1) {
   margin-left: 8px;
@@ -11349,13 +11429,15 @@ html body .helpPage .center .helpWrap div .btnBox button:last-child {
   border-radius: 3px;
   font-size: 14px;
   font-weight: bold;
-  background: #282828;
-  margin-top: 20px;
 }
 html body .helpPage .center .helpWrap div .btnBox button:last-child:hover, html body .helpPage .center .helpWrap div .btnBox button:last-child:active, html body .helpPage .center .helpWrap div .btnBox button:last-child.active {
   background: #ffc13c;
   color: #000000;
   border-color: transparent;
+}
+html body .helpPage .center .helpWrap div .btnBox button:last-child {
+  background: #282828;
+  margin-top: 20px;
 }
 html body .helpPage .center .helpWrap div hr {
   border-color: #b5833b;
@@ -11534,9 +11616,6 @@ html body .registerWrap .bigBox .inputBox form label div .codeBtn {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   text-align: center;
-  position: absolute;
-  right: 5px;
-  font-size: 12px;
 }
 html body .registerWrap .bigBox .inputBox form label div .codeBtn:hover, html body .registerWrap .bigBox .inputBox form label div .codeBtn:active, html body .registerWrap .bigBox .inputBox form label div .codeBtn.active {
   background: #ff4719;
@@ -11544,6 +11623,11 @@ html body .registerWrap .bigBox .inputBox form label div .codeBtn:hover, html bo
 }
 html body .registerWrap .bigBox .inputBox form label div .codeBtn:hover::before, html body .registerWrap .bigBox .inputBox form label div .codeBtn:active::before, html body .registerWrap .bigBox .inputBox form label div .codeBtn.active::before {
   display: none;
+}
+html body .registerWrap .bigBox .inputBox form label div .codeBtn {
+  position: absolute;
+  right: 5px;
+  font-size: 12px;
 }
 html body .registerWrap .bigBox .inputBox form label .remind {
   width: 340px;
