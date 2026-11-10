@@ -9151,6 +9151,9 @@ html body .innerPage .center .depositWrap .depositMiddle .top .list .box ul li::
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+html body .innerPage .center .depositWrap .depositMiddle .top .list .box ul li {
+  text-align: center;
+}
 html body .innerPage .center .depositWrap .depositMiddle .top .list .box ul li i {
   width: 36px;
   height: 36px;
